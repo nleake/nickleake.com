@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-93178309-1">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'UA-93178309-1');
+        </script>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Nick Leake: USCIS
+                </title>
+                <meta content="This page outlines the work Nick completed with United States Citizenship and Immigration Services as a federal IT specialist." name="description">
+                    <link href="https://fonts.googleapis.com" rel="preconnect">
+                        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+                            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400;0,700;1,400&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+                                <link href="css/style.css" rel="stylesheet">
+                                </link>
+                            </link>
+                        </link>
+                    </link>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <nav class="nav">
+            <a class="nav__link" href="about-me.html">
+                about
+            </a>
+            <a class="nav__logo" href="index.html">
+                <img alt="a fist clutching a leek" id="logo" src="images/leek_logo.svg">
+                </img>
+            </a>
+            <a class="nav__link" href="mailto:nickleake@proton.me">
+                contact
+            </a>
+        </nav>
+        <div class="container">
+            <h1>
+                USCIS
+            </h1>
+            <p class="date">
+                2018-2019
+            </p>
+            <figure tabindex="1">
+                <img alt="A refugee officer preparing documents for an interview." class="project__image" loading="lazy" src="images/officer-prep.jpg">
+                    <figcaption>
+                        A refugee officer reviews a case.
+                    </figcaption>
+                </img>
+            </figure>
+            <p class="intro">
+                U.S. Citizenship and Immigration Services (USCIS) manages America's immigration system. Their refugee corps reviews cases of people fleeing persecution and violence. Officers navigate a labyrinth of legal processes to decide who can stay in America. Cases can take months or years to reach a decision.
+            </p>
+            <figure tabindex="2">
+                <img alt="The mainframe immigration system we replaced, RAPS. A black screen with a mess of different colored text and inputs scattered about." class="project__image" loading="lazy" src="images/RAPS_legacy.png">
+                    <figcaption>
+                        The 80s mainframe application we replaced.
+                    </figcaption>
+                </img>
+            </figure>
+            <p>
+                Our team was tasked with building a new case management system for USCIS. I managed research, QA testing, and the product backlog. Our goals were to save money and improve security by replacing a mainframe built in the 80s. One year later we had saved $10 million a year and created a faster, more secure process for adjudicating refugee applications. 
+                <a href="https://youtu.be/zfcSZaoCizs" tabindex="3">
+                    Watch this video to learn about our team.
+                </a>
+            </p>
+            <figure tabindex="4">
+                <img alt="Our persona for an adjudicating officer explaining their story, paint points, and goals." class="project__image" loading="lazy" src="images/Adjudicating Officer-min.jpg">
+                    <figcaption>
+                        This persona is a composite of our research.
+                    </figcaption>
+                </img>
+            </figure>
+            <p>
+                Immigration officers interview around a dozen applicants each week. They must hurry to complete cases while complying with shifting laws and policies. Interview new applicants within 45 days. Decide their case within 180 days. New applications had tripled in the last five years. All applications were submitted on paper and then manually logged into the mainframe. We could save USCIS money by moving to the cloud, but could we make a better process? We sat with officers to find out.
+            </p>
+            <figure tabindex="5">
+                <img alt="The updated case editing UI utilizes a card based interface to display applicant case data" class="project__image" loading="lazy" src="images/case_search.png">
+                    <figcaption>
+                        Officers find cases by A# and work in batches.
+                    </figcaption>
+                </img>
+            </figure>
+            <p>
+                My design partners and I conducted interviews and usability tests each week. We learned officers preferred reviewing cases on paper instead of the computer. Many officers used rubber thimbles to protect their fingers while rifling through applications. To make our digital forms easier to scan, we organized form fields to mimic the
+                <a href="https://www.uscis.gov/i-589" tabindex="6">
+                    I-589
+                </a>
+                and
+                <a href="https://www.uscis.gov/sites/default/files/document/forms/i-590.pdf" tabindex="7">
+                    I-590
+                </a>
+                applications. We split each case into pages mirroring steps in the adjudication process: case review, security checks, interview, and decision. We also added quality of life improvements like calculated age values and a history of actions taken on the case.
+            </p>
+            <figure tabindex="8">
+                <img alt="The case entry page is where users review applicant biographic information such as names, dates of birth, and attorney inoformation." class="project__image" loading="lazy" src="images/case_entry.png">
+                    <figcaption>
+                        We automatically populated forms where possible.
+                    </figcaption>
+                </img>
+            </figure>
+            <p>
+                Since the mainframe didn't have mouse support, making our app easy to use via keyboard was critical for veteran officers. We used
+                <a href="https://designsystem.digital.gov" tabindex="9">
+                    USWDS
+                </a>
+                to create a standard library of accessible components.
+                <a href="https://www.figma.com/file/fyON7msv6O5GZFB76c1JIE/Global_Atomic_Components?node-id=56%3A0" tabindex="10">
+                    View a sample of our team design library.
+                </a>
+            </p>
+            <figure tabindex="11">
+                <img alt="a service blueprint the team created, a refugee officer's desk with computer equipment, and Bon Matcha ice cream." class="project__image" src="images/user_research.jpg">
+                </img>
+            </figure>
+            <p>
+                For background and security checks, officers had to manually type applicant data into several systems. They did this while remembering rules about specific situations and populations. Our app automated this data entry with logic and APIs. Parts of the case process that had taken hours
+                <em>
+                    now took seconds.
+                </em>
+            </p>
+            <figure tabindex="12">
+                <img alt="The Global security checks page where applicant data was automatically sent to partner systems for processing and had results returned at drastically reduced timelines." class="project__image" loading="lazy" src="images/security_checks.png">
+                    <figcaption>
+                        Our API cut security check processing times by 90%
+                    </figcaption>
+                </img>
+            </figure>
+            <p>
+                We not only met our deadline, but saved officers hours of extra work every week. Our app saved USCIS over $10 million a year and received a Director's Cornerstone Award.
+            </p>
+            <figure tabindex="13">
+                <img alt="Raquel holding the Director's Cornerstone Award which was awarded to our team." class="project__image" loading="lazy" src="images/cornerstone_award.jpg">
+                    <figcaption>
+                        We won the Director's Cornerstone Award
+                    </figcaption>
+                </img>
+            </figure>
+            <a class="project-nav" href="index.html" tabindex="14">
+                Back to Home
+            </a>
+        </div>
+        <footer>
+            <ul class="footer__nav" id="footer">
+                <li class="footer__link">
+                    <a href="https://www.linkedin.com/in/nickleake/">
+                        <img alt="LinkedIn logo" class="social" src="images/linkedin_logo.svg"/>
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="https://dribbble.com/nick_leake">
+                        <img alt="Dribbble basketball logo" class="social" src="images/dribbble-icon.svg"/>
+                    </a>
+                </li>
+                <li class="footer__link">
+                    <a href="https://www.instagram.com/nleake/">
+                        <img alt="Instagram logo" class="social" src="images/instagram-svg.svg"/>
+                    </a>
+                </li>
+            </ul>
+            <img alt="logo for Leek Designs of a fist clutching a leek surrounded by stars" id="footer_logo" src="images/leek_logo_bw.svg">
+            </img>
+        </footer>
+    </body>
+</html>
