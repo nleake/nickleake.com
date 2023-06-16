@@ -41,7 +41,7 @@ h1, h2 {
 }
 .nav__link:hover {
     color: #AD3D9E;
-    text-decoration: wavy underline;
+    text-decoration: underline;
 }
 .nav__logo {
     margin: 0 2rem;
