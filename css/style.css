@@ -305,7 +305,7 @@ p>a:hover {
 .container>p>a {
     color: #930084;
     border-radius:  .25em;
-    font-weight: 600;
+    text-decoration: underline;
 }
 .container>.date {
     padding: 0;
