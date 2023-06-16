@@ -238,6 +238,7 @@ footer {
     display: grid;
     place-items: center;
     background-color: #AD3D9E;
+    color: white;
 }
 #footer_logo {
     max-width: 250px;
