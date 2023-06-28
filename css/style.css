@@ -4,21 +4,21 @@
     --offwhite: #FEFEFE;
     --ink: #333;
     --cornflowerblue: #6293eb;
-    --gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #e28484 100%);
+    --gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, rgb(226, 132, 132) 100%);
     --theme-name: "light";
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
     :root {
-    --magenta: #140e12;
+    --magenta: #343334;
     --berry: #c5feb2;
-    --offwhite: #333;
-    --ink: #FEFEFE;
+    --offwhite: #282222;
+    --ink: #f2efef;
     --cornflowerblue: #80e2ef;
-    --gradient: linear-gradient(132deg, #3ff474 0%, #0d7a6c 100%);
+    --gradient: rgb(184, 255, 178);
     --theme-name: "dark";
     }
-  } */
+  }
 
 * {
     box-sizing: border-box;
@@ -153,18 +153,18 @@ h1, h2 {
 }
 .banner__intro {
     max-width: 420px;
-    color: var(--offwhite);
+    color: #f2efef;
 }
 .banner__intro>h1 {
     font-size: 3em;
     padding-bottom: .75rem;
-    text-shadow: 0.05em 0.05em 0.05em var(--berry);
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 .banner__intro>p {
     padding-bottom: 2rem;
     line-height: 1.4;
+    
 }
 
 .banner__intro>p>a:hover {
