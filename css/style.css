@@ -18,6 +18,10 @@
     --gradient: rgb(184, 255, 178);
     --theme-name: "dark";
     }
+
+    .coffeecat {
+        filter: hue-rotate(-0.9turn);
+    }
   }
 
 * {
