@@ -26,7 +26,7 @@
     padding: 0;
 }
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
     line-height: 1.45;
     color: var(--ink);
     background-color: var(--offwhite);
@@ -42,7 +42,7 @@ img {
     display: block;
 }
 h1, h2 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     line-height: 1.2;
 }
@@ -70,7 +70,7 @@ h1, h2 {
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
-    opacity: .95;
+    opacity: .9;
     filter: contrast(1.2);
 }
 .nav__logo:hover {
@@ -123,11 +123,11 @@ h1, h2 {
         transform: translateY(0);
     }
     10% {
-        -moz-transform: translateY(-6px);
-        -ms-transform: translateY(-6px);
-        -o-transform: translateY(-6px);
-        -webkit-transform: translateY(-6px);
-        transform: translateY(-6px);
+        -moz-transform: translateY(-12px);
+        -ms-transform: translateY(-12px);
+        -o-transform: translateY(-12px);
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
     }
     20% {
         -moz-transform: translateY(0px);
@@ -137,11 +137,11 @@ h1, h2 {
         transform: translateY(0px);
     }
     25% {
-        -moz-transform: translateY(-3px);
-        -ms-transform: translateY(-3px);
-        -o-transform: translateY(-3px);
-        -webkit-transform: translateY(-3px);
-        transform: translateY(-3px);
+        -moz-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        -o-transform: translateY(-6px);
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
     }
     30% {
         -moz-transform: translateY(0px);
@@ -222,7 +222,7 @@ article.card {
     flex: 1 1 420px;
     padding: 1.5rem;
     border-radius: 8px;
-    border: 2px solid #00000012;
+    border: 2px solid #6a6a6a12;
     box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
     font-size: 1.2rem;
 }
@@ -235,9 +235,8 @@ article.card img {
     border-radius: 8px;
 }
 article.card:hover {
-    box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.25);
-    top: 2px;
-    background-color: ffecfd;
+    box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
+    top: 3px;
     filter: grayscale();
 }
 article.card:active, article.card:focus {
@@ -286,7 +285,7 @@ footer {
 .social {
     width: 40px;
     height: 40px;
-    opacity: .8;
+    opacity: .75;
 }
 .social:hover {
     opacity: 1;
@@ -318,16 +317,6 @@ li>a:hover {
     font-size: 3rem;
     margin-top: 2rem;
 }
-.container>h2 {
-    margin-top: 3rem;
-    font-weight: 500;
-    border-bottom: 3px solid --ink;
-}
-.container>p, ul {
-    max-width: 65ch;
-    list-style-type: none;
-    padding: 1.25rem;
-}
 .container>p>a {
     color: var(--berry);
     border-radius:  .25em;
@@ -337,11 +326,6 @@ li>a:hover {
     padding: 0;
     font-style: italic;
 }
-.project-details>li {
-    list-style-type: none;
-    padding: 1.2em 0;
-}
-
 figure {
     padding: 2.5rem 1.5rem;
     margin: 0 auto;
@@ -356,7 +340,6 @@ figcaption {
     max-width: 275px;
     padding:  1rem;
 }
-
 .project__image {
     max-width: 900px;
     margin: 0 auto;
@@ -380,9 +363,6 @@ figcaption {
 .project-nav:hover {
     color: var(--magenta);
 }
-.active {
-    border-bottom: 6px solid #AD3D9E;
-}
 .screen-reader-text {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -403,7 +383,7 @@ figcaption {
         font-size: 1rem;
     }
     .project__image {
-        max-width: 95%;
+        max-width: 98%;
     }
     #logo {
         max-width: 5rem;
@@ -428,9 +408,6 @@ figcaption {
     .banner {
         font-size: 1.2rem;
     }
-    .banner__photo {
-        max-width: 45%;
-    }
     .banner__intro {
         max-width: 85%;
     }
@@ -443,5 +420,16 @@ figcaption {
     }
     article.card img {
         height: auto;
+    }
+}
+@media (max-width: 460px) {
+    .banner {
+        font-size: 1.2rem;
+    }
+    .banner__intro>h1 {
+    font-size: 2.4em;
+}
+    .menu__link {
+        font-size: .75rem;
     }
 }
