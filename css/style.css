@@ -317,6 +317,11 @@ li>a:hover {
     font-size: 3rem;
     margin-top: 2rem;
 }
+.container>p, ul {
+    max-width: 76ch;
+    list-style-type: none;
+    padding: 1.25rem;
+}
 .container>p>a {
     color: var(--berry);
     border-radius:  .25em;
