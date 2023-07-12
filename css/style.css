@@ -427,14 +427,3 @@ figcaption {
         height: auto;
     }
 }
-@media (max-width: 460px) {
-    .banner {
-        font-size: 1.2rem;
-    }
-    .banner__intro>h1 {
-    font-size: 2.4em;
-}
-    .menu__link {
-        font-size: .75rem;
-    }
-}
