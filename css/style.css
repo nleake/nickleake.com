@@ -63,6 +63,7 @@ h1, h2 {
 }
 .nav__link:hover {
     text-decoration: underline;
+    color: var(--berry);
 }
 .nav__logo {
     margin: 0 2rem;
@@ -163,11 +164,12 @@ h1, h2 {
 .banner__intro>p {
     padding-bottom: 2rem;
     line-height: 1.4;
-    
 }
-
+.banner__intro>p>a {
+    text-decoration: underline;
+}
 .banner__intro>p>a:hover {
-    color: var(--offwhite);
+    color: var(--berry);
 }
 /* Project Cards */
 
