@@ -57,7 +57,7 @@
                 </img>
             </figure>
             <p class="intro">
-                U.S. Citizenship and Immigration Services (USCIS) manages America's immigration system. Their refugee corps reviews cases of people fleeing persecution and violence. Officers navigate a labyrinth of legal processes to decide who can stay in America. Cases can take years to reach a decision.
+                U.S. Citizenship and Immigration Services (USCIS) manages America's immigration system. Their refugee corps reviews cases of people fleeing persecution and violence, navigating a labyrinth of legal processes to decide who can stay in America. Cases may take years to reach a decision, with some applicants waiting in detention.
             </p>
             <figure tabindex="2">
                 <img alt="The mainframe immigration system we replaced, RAPS. A black screen with a mess of different colored text and inputs scattered about." class="project__image" loading="lazy" src="images/RAPS_legacy.png">
@@ -67,30 +67,27 @@
                 </img>
             </figure>
             <p>
-                My team was hired to build a new case management system for USCIS. I managed research, acceptance testing, and the product backlog. Our goal was to save money and improve security by replacing a mainframe built in the 80s. One year later we had <em>saved $10 million a year</em> and created a faster, more secure process for adjudicating refugee applications. 
-                <a href="https://youtu.be/zfcSZaoCizs" tabindex="3">
-                    Watch this video to learn about our team.
-                </a>
+                My team was hired to build a new case management system for USCIS. I was responsible for research, testing, managing our backlog of work, and our stakeholders. Our goal was to save money and improve security by replacing a mainframe built in the 80s. One year later we had <em>saved over $10 million a year</em> and created a faster, more secure process for adjudicating refugee applications. Check out <a href="https://youtu.be/zfcSZaoCizs">this video</a> to learn more about our team.
             </p>
-            <figure tabindex="4">
+            <figure tabindex="3">
                 <img alt="Our persona for an adjudicating officer explaining their story, paint points, and goals." class="project__image" loading="lazy" src="images/Adjudicating Officer-min.jpg">
                     <figcaption>
-                        I typically avoid personas, but this one's a composite of hundreds of user interviews and usability tests.
+                        This persona is a composite of hundreds of user interviews and usability tests.
                     </figcaption>
                 </img>
             </figure>
             <p>
-                Immigration officers interview around a dozen applicants each week. They must hurry to complete cases while complying with shifting laws and policies. Interview new applicants within 45 days. Decide their case within 180 days. New applications had tripled in the last five years. All applications were submitted on paper and then manually logged into the mainframe. We could save USCIS money by moving to the cloud, but could we create a better process? We sat with officers to find out.
+                Immigration officers interview around a dozen applicants each week. They must hurry to complete cases while complying with shifting laws and policies. Interview new applicants within 45 days. Decide their case within 180 days. Oh, and new applications had tripled in the last five years. All applications were submitted on paper and then manually logged into the mainframe. We could save USCIS money by moving to the cloud, but could we create a better process? We sat with officers to find out.
             </p>
-            <figure tabindex="5">
-                <img alt="The updated case editing UI utilizes a card based interface to display applicant case data" class="project__image" loading="lazy" src="images/case_search.png">
+            <figure tabindex="4">
+                <img alt="The updated case editing UI utilizes a card based interface to display applicant case data" class="project__image" loading="lazy" src="images/case_search.webp">
                     <figcaption>
                         Officers work batches of cases referenced by A#, so the home page emphasized search and recent cases.
                     </figcaption>
                 </img>
             </figure>
             <p>
-                My design partners and I conducted interviews and usability tests each week. We learned officers found it faster to review cases on paper. Many officers used rubber thimbles to protect their fingers while rifling through applications. To make our digital forms easier to scan, we organized form fields to mimic the
+                My two design partners and I conducted interviews and usability tests each week. We learned officers found it faster to review cases on paper because they could visually scan more information. Many officers used rubber thimbles to protect their fingers while rifling through applications. To make our digital forms easier to scan, we organized form fields to mimic the
                 <a href="https://www.uscis.gov/i-589" tabindex="6">
                     I-589
                 </a>
@@ -98,26 +95,33 @@
                 <a href="https://www.uscis.gov/sites/default/files/document/forms/i-590.pdf" tabindex="7">
                     I-590
                 </a>
-                applications. We split each case into pages mirroring steps in the adjudication process: case review, security checks, interview, and decision. We also added quality of life improvements like calculated age values and a history of actions taken on the case.
+                applications. We split each case into pages mirroring steps in the adjudication process: case review, security checks, interview, and decision. We also added quality of life improvements like calculated age values and a history of who modified what on the case.
             </p>
-            <figure tabindex="8">
+            <figure tabindex="5">
                 <img alt="The case entry page is where users review applicant biographic information such as names, dates of birth, and attorney inoformation." class="project__image" loading="lazy" src="images/case_entry.png">
                     <figcaption>
-                        We automatically populated forms where possible.
+                        Imagine having to fill all this in by hand, for each person on the case.
+                    </figcaption>
+                </img>
+            </figure>
+            <figure tabindex="6">
+                <img alt="A closer look at sample applicant information cards on the case entry page. Each card housed inputs grouped by form section." class="project__image" loading="lazy" src="images/editing-cards.webp">
+                    <figcaption>
+                        We included edit buttons on either end of the card to make it super fast to edit information using just the keyboard.
                     </figcaption>
                 </img>
             </figure>
             <p>
-                Since the mainframe didn't have mouse support, making our app easy to use via keyboard was critical for veteran officers. We used
+                Since the mainframe didn't have mouse support, making our app easy to use via keyboard was critical for power users. We used
                 <a href="https://designsystem.digital.gov" tabindex="9">
                     USWDS
                 </a>
                 to create a standard library of accessible components.
                 <a href="https://www.figma.com/file/fyON7msv6O5GZFB76c1JIE/Global_Atomic_Components?node-id=56%3A0" tabindex="10">
-                    View a sample of our team design library.
+                    View a sample of our team design library in Figma.
                 </a>
             </p>
-            <figure tabindex="11">
+            <figure tabindex="7">
                 <img alt="a service blueprint the team created, a refugee officer's desk with computer equipment, and Bon Matcha ice cream." class="project__image" src="images/user_research.jpg">
                 </img>
             </figure>
@@ -127,8 +131,12 @@
                     now took seconds.
                 </em>
             </p>
-            <figure tabindex="12">
-                <img alt="The Global security checks page where applicant data was automatically sent to partner systems for processing and had results returned at drastically reduced timelines." class="project__image" loading="lazy" src="images/security_checks.png">
+            <figure tabindex="8">
+                <img alt="A close up of different security check cards in different states." class="project__image" loading="lazy" src="images/checks-close-up.webp">
+                </img>
+            </figure>
+            <figure tabindex="9">
+                <img alt="The Global security checks page where applicant data was automatically sent to partner systems for processing and had results returned at drastically reduced timelines." class="project__image" loading="lazy" src="images/security_checks.webp">
                     <figcaption>
                         Our API cut security check processing times by 90%
                     </figcaption>
@@ -137,8 +145,8 @@
             <p>
                 We not only met our deadline, but saved officers hours of extra work every week. Our app saved USCIS over $10 million a year and received a Director's Cornerstone Award.
             </p>
-            <figure tabindex="13">
-                <img alt="Raquel holding the Director's Cornerstone Award which was awarded to our team." class="project__image" loading="lazy" src="images/cornerstone_award.jpg">
+            <figure tabindex="10">
+                <img alt="Raquel holding the Director's Cornerstone Award which was awarded to our team." class="project__image" loading="lazy" src="images/conernstone-award-1.webp">
                     <figcaption>
                         We won the Director's Cornerstone Award
                     </figcaption>
