@@ -124,6 +124,7 @@ h1, h2 {
     animation: rotate 20s linear infinite;
     z-index: 1;
     opacity: 50%;
+    filter: blur(1px);
 }
 
 @keyframes rotate {
