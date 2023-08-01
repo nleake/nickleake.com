@@ -122,9 +122,14 @@ h1, h2 {
     display: inline-block;
     position: absolute;
     animation: rotate 20s linear infinite;
+    animation-play-state: running;
     z-index: 1;
     opacity: 50%;
     filter: blur(1px);
+}
+
+.solidarity:hover {
+    animation-play-state: paused;
 }
 
 @keyframes rotate {
