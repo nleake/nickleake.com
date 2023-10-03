@@ -361,6 +361,10 @@ figcaption {
     max-width: 275px;
     padding:  1rem;
 }
+.snapshot {
+    max-width: 400px;
+    padding: 1rem;
+}
 .project__image {
     max-width: 900px;
     margin: 0 auto;
