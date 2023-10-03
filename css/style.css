@@ -340,7 +340,7 @@ li>a:hover {
 .container>p, ul {
     max-width: 78ch;
     list-style-type: none;
-    padding: 1.25rem;
+    padding: 1rem;
 }
 .container>p>a {
     color: var(--berry);
@@ -358,7 +358,7 @@ figcaption {
     padding: 4px;
 }
 #self-portrait {
-    max-width: 275px;
+    max-width: 400px;
     padding:  1rem;
 }
 .snapshot {
