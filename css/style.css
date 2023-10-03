@@ -336,6 +336,7 @@ li>a:hover {
     text-align: center;
     font-size: 3rem;
     margin-top: 2rem;
+    margin-bottom: .5rem;
 }
 .container>p, ul {
     max-width: 78ch;
