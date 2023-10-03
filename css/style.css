@@ -369,6 +369,7 @@ figcaption {
 .project__image {
     max-width: 900px;
     margin: 0 auto;
+    border-radius: 1rem;
 }
 .project__link {
     font-size: 1.2rem;
@@ -410,6 +411,7 @@ figcaption {
     }
     .project__image {
         max-width: 98%;
+        border-radius: 0;
     }
     #logo {
         max-width: 5rem;
