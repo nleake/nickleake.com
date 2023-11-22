@@ -361,6 +361,7 @@ figcaption {
 #self-portrait {
     max-width: 400px;
     padding:  1rem;
+    border-radius: 50%;
 }
 .snapshot {
     max-width: 400px;
