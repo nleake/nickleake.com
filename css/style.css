@@ -142,11 +142,11 @@ h1, h2 {
         transform: translateY(0);
     }
     10% {
-        -moz-transform: translateY(-18px);
-        -ms-transform: translateY(-18px);
-        -o-transform: translateY(-18px);
-        -webkit-transform: translateY(-18px);
-        transform: translateY(-18px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
     }
     20% {
         -moz-transform: translateY(0px);
@@ -187,7 +187,10 @@ h1, h2 {
 .banner__intro>p>a {
     text-decoration: underline;
 }
-.banner__intro>p>a:hover {
+ {
+    color: var(--berry);
+}
+.banner__intro>p>a:hor {
     color: var(--berry);
 }
 /* Project Cards */
@@ -317,7 +320,7 @@ li>a:hover {
     color: var(--magenta);
     text-decoration: underline;
 }
-.container>p>a:hover {
+.banner__intro>p>a:hover, .container>p>a:hover {
     color: var(--ink);
     filter: opacity(.9);
 }
@@ -359,7 +362,7 @@ figcaption {
     padding: 4px;
 }
 #self-portrait {
-    max-width: 400px;
+    max-width: 320px;
     padding:  1rem;
     border-radius: 50%;
 }
