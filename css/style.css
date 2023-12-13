@@ -187,9 +187,6 @@ h1, h2 {
 .banner__intro>p>a {
     text-decoration: underline;
 }
- {
-    color: var(--berry);
-}
 .banner__intro>p>a:hor {
     color: var(--berry);
 }
