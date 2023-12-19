@@ -141,7 +141,7 @@ h1, h2 {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-    10% {
+    6% {
         -moz-transform: translateY(-20px);
         -ms-transform: translateY(-20px);
         -o-transform: translateY(-20px);
