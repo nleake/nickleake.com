@@ -83,6 +83,9 @@ h2 {
 .nav__logo:hover {
   opacity: 1;
 }
+.nav__logo:active {
+  filter: grayscale();
+}
 #logo {
   max-width: 6rem;
   height: 80px;
@@ -120,6 +123,12 @@ h2 {
 }
 .coffeecat {
   z-index: 2;
+}
+.coffeecat:hover {
+  filter: brightness(1.2);
+}
+.coffeecat:active {
+  filter: brightness(.5);
 }
 .solidarity {
   display: inline-block;
