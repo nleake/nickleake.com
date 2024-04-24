@@ -125,7 +125,7 @@ h2 {
   z-index: 2;
 }
 .coffeecat:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
 }
 .coffeecat:active {
   filter: brightness(.5);
