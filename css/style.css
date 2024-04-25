@@ -319,7 +319,7 @@ li > a:hover {
 ul {
   max-width: 78ch;
   list-style-type: none;
-  padding: 1rem;
+  padding: .75em;
 }
 .container > p > a {
   color: var(--berry);
