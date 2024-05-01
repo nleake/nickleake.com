@@ -355,10 +355,6 @@ figcaption {
   text-decoration: underline;
   filter: opacity(0.8);
 }
-.card__role {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
 .project-nav {
   align-self: center;
   color: var(--ink);
