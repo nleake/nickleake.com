@@ -337,7 +337,7 @@ figcaption {
   padding: 4px;
 }
 #self-portrait {
-  max-width: 320px;
+  max-width: 400px;
   padding: 1rem;
   border-radius: 50%;
 }
@@ -399,6 +399,9 @@ figcaption {
   }
   figure {
     padding: 2rem 0;
+  }
+  #self-portrait {
+    max-width: 320px;
   }
   #rock_you {
     display: inline-block;
