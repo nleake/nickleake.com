@@ -262,8 +262,7 @@ footer {
   color: white;
 }
 #footer_logo {
-  max-width: 250px;
-  padding: 1.5rem;
+  max-width: 200px;
   margin-top: 1rem;
 }
 .footer__nav {
