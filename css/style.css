@@ -377,15 +377,16 @@ figcaption {
   word-wrap: normal !important;
 }
 /* MEDIA QUERIES */
-
+@media (max-width: 900px) {
+  .project__image {
+    max-width: 98%;
+    border-radius: 0;
+  }
+}
 @media (max-width: 700px) {
   .container {
     padding: 0;
     font-size: 1rem;
-  }
-  .project__image {
-    max-width: 98%;
-    border-radius: 0;
   }
   #logo {
     max-width: 5rem;
@@ -398,15 +399,6 @@ figcaption {
   }
   figure {
     padding: 2rem 0;
-  }
-  #self-portrait {
-    max-width: 320px;
-  }
-  #rock_you {
-    display: inline-block;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    object-fit: cover;
   }
 }
 @media (max-width: 600px) {
@@ -425,5 +417,14 @@ figcaption {
   }
   article.card img {
     height: auto;
+  }
+  #self-portrait {
+    max-width: 320px;
+  }
+  #rock_you {
+    display: inline-block;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
   }
 }
