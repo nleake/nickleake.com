@@ -1,25 +1,25 @@
 :root {
-  --magenta: #bb3b8a;
-  --berry: #930084;
-  --offwhite: #fefefe;
-  --ink: #333;
-  --cornflowerblue: #6293eb;
+  --primary: #2B79BE;
+  --primary-dark: #1E5585;
+  --offwhite: #FFFEFF;
+  --ink: #100B00;
+  --cornflowerprimary: #6293eb;
   --gradient: linear-gradient(
     42deg,
-    #7144ba,
-    #bf2d82 46%,
-    rgb(207, 48, 133) 100%
+    #446fba,
+    #2d71bf 46%,
+    rgb(98, 48, 207) 100%
   );
   --theme-name: "light";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --magenta: #343334;
-    --berry: #c5feb2;
-    --offwhite: #282222;
-    --ink: #f2efef;
-    --cornflowerblue: #80e2ef;
+    --primary: #343334;
+    --primary-dark: #c5feb2;
+    --offwhite: #100B00;
+    --ink: #FFFEFF;
+    --cornflowerprimary: #80e2ef;
     --gradient: rgb(184, 255, 178);
     --theme-name: "dark";
   }
@@ -70,7 +70,7 @@ h2 {
 }
 .nav__link:hover {
   text-decoration: underline;
-  color: var(--berry);
+  color: var(--primary-dark);
 }
 .nav__logo {
   margin: 0 2rem;
@@ -98,7 +98,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--magenta);
+  background-color: var(--primary);
   background-image: var(--gradient);
   background-size: 400% 400%;
   font-size: 1.25rem;
@@ -164,7 +164,7 @@ h2 {
   text-decoration: underline;
 }
 .banner__intro > p > a:hor {
-  color: var(--berry);
+  color: var(--primary-dark);
 }
 /* Project Cards */
 
@@ -198,7 +198,7 @@ h2 {
 .section__header > a {
   font-family: "Shadows Into Light Two", cursive;
   text-decoration: underline;
-  color: var(--cornflowerblue);
+  color: var(--cornflowerprimary);
   font-weight: 600;
   letter-spacing: 0.1rem;
 }
@@ -258,7 +258,7 @@ footer {
   border-top: 1px solid rgba(51, 51, 51, 0.1);
   display: grid;
   place-items: center;
-  background-color: var(--magenta);
+  background-color: var(--primary);
   color: white;
 }
 #footer_logo {
@@ -289,7 +289,7 @@ footer {
   display: none;
 }
 li > a:hover {
-  color: var(--magenta);
+  color: var(--primary);
   text-decoration: underline;
 }
 .banner__intro > p > a:hover,
@@ -321,7 +321,7 @@ ul {
   padding: .75em;
 }
 .container > p > a {
-  color: var(--berry);
+  color: var(--primary-dark);
   border-radius: 0.25em;
   text-decoration: underline;
 }
@@ -362,7 +362,7 @@ figcaption {
   text-decoration: underline;
 }
 .project-nav:hover {
-  color: var(--magenta);
+  color: var(--primary);
 }
 .screen-reader-text {
   border: 0;
