@@ -12,7 +12,7 @@
   --theme-name: "light";
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --primary: #343334;
     --primary-dark: hsla(105, 97%, 85%, 0.863);
@@ -21,8 +21,9 @@
     --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgb(37 92 33 / 48%) 100%);
     --theme-name: "dark";
   }
-} */
+}
 
+/* UNIVERSAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,8 +55,8 @@ h2 {
   font-weight: 400;
   line-height: 1.2;
 }
-/* Navigation */
 
+/* NAVIGATION */
 .nav {
   display: flex;
   align-items: center;
@@ -92,8 +93,8 @@ h2 {
   max-width: 6rem;
   height: 80px;
 }
-/* Banner Styles */
 
+/* BANNERS */
 .banner {
   display: flex;
   padding: 2rem 1rem;
@@ -123,31 +124,6 @@ h2 {
   height: 360px;
   position: relative;
 }
-.coffeecat {
-  z-index: 2;
-}
-.coffeecat:hover {
-  filter: brightness(1.1);
-}
-.coffeecat:active {
-  filter: brightness(.5);
-}
-.solidarity {
-  display: inline-block;
-  position: absolute;
-  animation: rotate 20s linear infinite;
-  animation-play-state: running;
-  z-index: 1;
-  opacity: 50%;
-  filter: blur(1px);
-
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
 .banner__intro {
   max-width: 420px;
   color: #f2efef;
@@ -168,18 +144,57 @@ h2 {
 .banner__intro > p > a:hor {
   color: var(--primary-dark);
 }
-/* Project Cards */
+
+/* COFFEE CAT */
+.coffeecat {
+  z-index: 2;
+}
+.coffeecat:hover {
+  filter: brightness(1.1);
+}
+.coffeecat:active {
+  filter: brightness(.5);
+}
+.solidarity {
+  display: inline-block;
+  position: absolute;
+  animation: rotate 20s linear infinite;
+  animation-play-state: running;
+  z-index: 1;
+  opacity: 50%;
+  filter: blur(1px);
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* PROJECT CARDS */
 
 .section {
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
 }
-.section__header {
+
+.calltoaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.calltoaction > div {
+  flex: 1;
+}
+.cta-text {
   font-size: 2rem;
   font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
+}
+#birb {
+  position: relative;
+  right: -32px;
+  height: 250px;
 }
 .hand {
   display: inline-block;
@@ -215,7 +230,7 @@ article.card {
   position: relative;
   margin: 1.5rem;
   min-width: 242px;
-  max-width: 29rem;
+  max-width: 27rem;
   flex: 1 1 420px;
   padding: 1.5rem;
   border-radius: 8px;
@@ -337,9 +352,10 @@ figcaption {
   padding: 4px;
 }
 #self-portrait {
-  max-width: 400px;
-  padding: 1rem;
+  max-height: 250px;
   border-radius: 50%;
+  border: 8px solid var(--primary-dark);
+  margin: 2rem 0 2rem 0;
 }
 .snapshot {
   max-width: 400px;
@@ -386,7 +402,7 @@ figcaption {
 }
 @media (max-width: 700px) {
   .container {
-    padding: 0;
+    padding: 0 .75rem;
     font-size: 1rem;
   }
   #logo {
