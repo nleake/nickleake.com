@@ -336,9 +336,7 @@ li > a:hover {
 .container > p {
   list-style-type: none;
   padding: .75em;
-  &:last-child)  {
-    padding-bottom: 0;
-}}
+}
 .container > p > a {
   color: var(--primary-dark);
   border-radius: 0.25em;
