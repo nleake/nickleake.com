@@ -190,6 +190,7 @@ h2 {
 .cta-text {
   font-size: 2rem;
   font-weight: 300;
+  text-align: center;
 }
 #birb {
   position: relative;
@@ -236,7 +237,7 @@ article.card {
   border-radius: 8px;
   border: 2px solid #6a6a6a12;
   box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 article.card img {
   height: 300px;
@@ -332,10 +333,12 @@ li > a:hover {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
-.container > p, {
+.container > p {
   list-style-type: none;
   padding: .75em;
-}
+  &:last-child)  {
+    padding-bottom: 0;
+}}
 .container > p > a {
   color: var(--primary-dark);
   border-radius: 0.25em;
@@ -437,6 +440,9 @@ figcaption {
   }
   #self-portrait {
     max-width: 320px;
+  }
+  .calltoaction {
+    flex-direction: column;
   }
   #rock_you {
     display: inline-block;
