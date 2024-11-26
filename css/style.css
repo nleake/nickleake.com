@@ -122,7 +122,6 @@ h2 {
 }
 .heroimg {
   height: 360px;
-  position: relative;
 }
 .banner__intro {
   max-width: 420px;
@@ -148,6 +147,7 @@ h2 {
 /* COFFEE CAT */
 .coffeecat {
   z-index: 2;
+  position: relative;
 }
 .coffeecat:hover {
   filter: brightness(1.1);
