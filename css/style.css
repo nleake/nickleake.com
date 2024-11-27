@@ -218,7 +218,6 @@ h2 {
   font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-decoration: underline;
   color: var(--primary-dark);
-  font-weight: 600;
   letter-spacing: 0.1rem;
 }
 .card-set {
