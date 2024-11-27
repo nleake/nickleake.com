@@ -18,7 +18,7 @@
     --primary-dark: hsla(105, 97%, 85%, 0.863);
     --offwhite: #100B00;
     --ink: #fffcf4;
-    --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgba(15, 51, 12, 0.48) 100%)
+    --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgba(18, 66, 59, 0.48) 100%);
     --theme-name: "dark";
   }
 }
@@ -429,7 +429,7 @@ figcaption {
     max-width: 85%;
   }
   .banner__intro > h1 {
-    font-size: 2.65em;
+    font-size: 12vw;
     letter-spacing: 0;
   }
   .menu__link {
