@@ -97,7 +97,6 @@ h2 {
 /* BANNERS */
 .banner {
   display: flex;
-  padding: 2rem 1rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -233,9 +232,10 @@ article.card {
   min-width: 242px;
   max-width: 27rem;
   flex: 1 1 420px;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 2px solid #6a6a6a12;
+  background-color: #d6deff38;
   box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
   font-size: 1.3rem;
 }
@@ -401,9 +401,14 @@ figcaption {
     border-radius: 0;
   }
 }
+@media (max-width: 780px) {
+  .banner {
+    padding: 1rem .5rem 0 .5rem;
+  }
+}
 @media (max-width: 700px) {
   .container {
-    padding: 0 .75rem;
+    padding: 0 .5rem;
     font-size: 1rem;
   }
   #logo {
@@ -411,10 +416,6 @@ figcaption {
   }
   .nav__logo {
     font-size: 1.5rem;
-  }
-  .heroimg  {
-    height: 280px;
-    width: 280px;
   }
   figure {
     padding: 2rem 0;
