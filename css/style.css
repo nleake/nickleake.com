@@ -18,7 +18,7 @@
     --primary-dark: hsla(105, 97%, 85%, 0.863);
     --offwhite: #100B00;
     --ink: #fffcf4;
-    --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgba(18, 66, 59, 0.48) 100%);
+    --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgb(18, 19, 66) 100%);
     --theme-name: "dark";
   }
 }
