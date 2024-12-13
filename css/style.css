@@ -449,4 +449,9 @@ figure {
     width: 100%;
     object-fit: cover;
   }
+  #birb {
+    position: relative;
+    right: 0;
+    height: 200px;
+  }
 }
