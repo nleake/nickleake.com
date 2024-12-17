@@ -215,6 +215,11 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
+.cta-text > p > a:hover {
+  filter:hue-rotate(42deg);
+  transition-duration: .8s;
+}
+
 /* Project Cards */
 .card-set {
   display: flex;
