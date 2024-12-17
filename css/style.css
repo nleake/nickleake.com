@@ -67,13 +67,15 @@ h2 {
   justify-content: center;
   border-bottom: 1px solid hsla(0, 0%, 91%, 0.44);
   padding: .25rem;
+  background-color: var(--offwhite);
+  box-shadow: 2px 4px 12px #00000014;
 }
 .menu__link {
   max-width: 2rem;
 }
 .nav__link {
   font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   opacity: 80%;
 }
 .nav__link:hover {
@@ -82,14 +84,13 @@ h2 {
 }
 .nav__logo {
   margin: 0 2rem;
+
+}
+.nav__logo:hover {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  opacity: 0.9;
-  filter: contrast(1.2);
-}
-.nav__logo:hover {
-  opacity: 1;
+  filter:brightness(1.25);
 }
 .nav__logo:active {
   filter: grayscale();
@@ -109,7 +110,6 @@ h2 {
   background-image: var(--gradient);
   background-size: 400% 400%;
   font-size: 1.25rem;
-  max-width: 1240px;
   margin: 0 auto;
   animation: gradient 12s ease infinite;
 }
@@ -141,12 +141,6 @@ h2 {
 .banner__intro > p {
   padding-bottom: 2rem;
   line-height: 1.4;
-}
-.banner__intro > p > a {
-  text-decoration: underline;
-}
-.banner__intro > p > a:hor {
-  color: var(--primary-dark);
 }
 
 /* Coffee Cat*/
@@ -253,13 +247,13 @@ article.card img {
 article.card:hover {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
   top: 3px;
-  filter: grayscale();
+  filter:brightness(.98);
 }
 article.card:active,
 article.card:focus {
   box-shadow: none;
   top: 8px;
-  filter: grayscale();
+  filter:brightness(.9);
 }
 .card__header {
   font-size: 2rem;
@@ -331,7 +325,7 @@ li > a:hover {
 }
 .container > h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
