@@ -246,6 +246,7 @@ article.card:focus {
   max-height: 250px;
   border-radius: 50%;
   border: 6px solid var(--primary-dark);
+  margin-bottom: 1rem;
 }
 /* Coffee Cat*/
 .unionize {
