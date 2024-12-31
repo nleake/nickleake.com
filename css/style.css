@@ -349,7 +349,6 @@ figure {
   max-height: 250px;
   border-radius: 50%;
   border: 6px solid var(--primary-dark);
-  margin: 2rem 0 2rem 0;
 }
 .project__image {
   max-width: 100vw;
