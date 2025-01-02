@@ -206,17 +206,14 @@ h1, h2 {
   flex-flow: row wrap; */
   display: grid;
   overflow: inherit;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
   justify-content: center;
   gap: 2rem;
   max-width: 100vw;
-  padding: 2rem;
+  padding: 10px;
 }
 article.card {
   position: relative;
-  min-width: 242px;
-  max-width: 440px;
-  flex: 1 1 400px;
   padding: 16px;
   border-radius: 16px;
   background-color: #edf9ff21;
@@ -227,7 +224,6 @@ article.card {
 article.card img {
   height: 300px;
   aspect-ratio: 4 / 3;
-  width: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -432,6 +428,9 @@ figure {
   }
   .banner__intro > h1 {
     letter-spacing: 0;
+  }
+  .heroimg {
+    height: 320px;
   }
   .menu__link {
     font-size: 0.8rem;
