@@ -1,8 +1,8 @@
 :root {
-  --primary: #2B79BE;
-  --primary-dark: #1E5585;
+  --primary: #2b79be;
+  --primary-dark: #1e5585;
   --offwhite: #fbf9f6;
-  --ink: #100B00;
+  --ink: #100b00;
   --gradient: linear-gradient(
     42deg,
     #446fba,
@@ -16,9 +16,14 @@
   :root {
     --primary: #343334;
     --primary-dark: hsla(105, 97%, 85%, 0.863);
-    --offwhite: #100B00;
+    --offwhite: #100b00;
     --ink: #fffcf4;
-    --gradient: linear-gradient(42deg, #0b242f, #292c2f 46%, rgb(18, 19, 66) 100%);
+    --gradient: linear-gradient(
+      42deg,
+      #0b242f,
+      #292c2f 46%,
+      rgb(18, 19, 66) 100%
+    );
     --theme-name: "dark";
   }
 }
@@ -38,7 +43,7 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
-p{
+p {
   max-width: 65ch;
   text-wrap: pretty;
 }
@@ -47,19 +52,27 @@ a {
   color: var(--ink);
   cursor: pointer;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-h1, h2, h3 {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-weight: 400;
   line-height: 1.2;
   overflow-wrap: break-word;
   text-wrap: balance;
 }
-h1, h2 {
-  margin: 1rem 0 .5rem 0;
+h1,
+h2 {
+  margin: 1rem 0 0.5rem 0;
 }
 .section {
   display: flex;
@@ -74,7 +87,7 @@ h1, h2 {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid hsla(0, 0%, 91%, 0.44);
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: var(--offwhite);
   box-shadow: 2px 4px 12px #00000014;
 }
@@ -82,7 +95,8 @@ h1, h2 {
   max-width: 2rem;
 }
 .nav__link {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-size: 1.25rem;
   opacity: 80%;
   text-decoration: underline;
@@ -101,11 +115,11 @@ h1, h2 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  filter:brightness(1.1);
+  filter: brightness(1.1);
   transform: scale(1.1);
 }
 .nav__logo:active {
-  filter: brightness(.3);
+  filter: brightness(0.3);
 }
 #logo {
   max-width: 6rem;
@@ -189,15 +203,16 @@ h1, h2 {
   }
 }
 .cta-text > p > a {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   text-decoration: underline;
   color: var(--primary-dark);
   letter-spacing: 0.1rem;
 }
 
 .cta-text > p > a:hover {
-  filter:hue-rotate(42deg);
-  transition-duration: .8s;
+  filter: hue-rotate(42deg);
+  transition-duration: 0.8s;
 }
 
 /* Project Cards */
@@ -230,13 +245,13 @@ article.card img {
 article.card:hover {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
   top: 3px;
-  filter:brightness(.98);
+  filter: brightness(0.98);
 }
 article.card:active,
 article.card:focus {
   box-shadow: none;
   top: 8px;
-  filter:brightness(.9);
+  filter: brightness(0.9);
 }
 .card__header {
   font-size: 2rem;
@@ -246,14 +261,14 @@ article.card:focus {
 
 #contact {
   padding: 4rem 0;
-} 
+}
 
 /* About */
 #self-portrait {
   max-height: 250px;
   border-radius: 50%;
   border: 6px solid var(--primary-dark);
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 ;
 }
 /* Coffee Cat*/
 .unionize {
@@ -267,7 +282,7 @@ article.card:focus {
   filter: brightness(1.1);
 }
 .coffeecat:active {
-  filter: brightness(.5);
+  filter: brightness(0.5);
 }
 .solidarity {
   display: inline-block;
@@ -326,7 +341,6 @@ li > a:hover {
   text-decoration: underline;
 }
 
-
 /* Article Page Styles */
 .container {
   display: flex;
@@ -354,7 +368,7 @@ li > a:hover {
   filter: opacity(0.9);
 }
 figure {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   margin: 0 auto;
 }
 .project__image {
@@ -398,7 +412,7 @@ figure {
 }
 @media (max-width: 780px) {
   .banner {
-    padding: 1rem .5rem 0 .5rem;
+    padding: 0 0.5rem;
   }
   .heroimg {
     height: 400px;
@@ -406,7 +420,7 @@ figure {
 }
 @media (max-width: 700px) {
   .container {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     font-size: 1rem;
   }
   #logo {
@@ -422,6 +436,7 @@ figure {
 @media (max-width: 600px) {
   .banner {
     font-size: 1.2rem;
+    flex-direction: column-reverse;
   }
   .banner__intro {
     max-width: 85%;
@@ -429,9 +444,7 @@ figure {
   .banner__intro > h1 {
     letter-spacing: 0;
   }
-  .heroimg {
-    height: 320px;
-  }
+
   .menu__link {
     font-size: 0.8rem;
   }
