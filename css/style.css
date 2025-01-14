@@ -315,15 +315,11 @@ footer {
 }
 .footer__nav {
   display: flex;
-  flex-wrap: wrap;
-  font-size: 1em;
   margin-top: 1.75rem;
+  gap: 16px;
 }
 .footer__nav > li {
   list-style-type: none;
-  font-size: 1.25rem;
-  padding: 0.5rem 2rem;
-  flex: 1 1 auto;
 }
 .social {
   width: 40px;
