@@ -443,9 +443,6 @@ figure {
     font-size: 1.2rem;
     flex-direction: column-reverse;
   }
-  .banner__intro {
-    max-width: 85%;
-  }
   .banner__intro > h1 {
     letter-spacing: 0;
   }
