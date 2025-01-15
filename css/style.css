@@ -150,6 +150,7 @@ h2 {
   }
 }
 .heroimg {
+  aspect-ratio: 1 / 1;
   height: 500px;
 }
 .banner__intro {
@@ -410,17 +411,7 @@ figure {
 /* Media Queries */
 @media (max-width: 900px) {
   .project__image {
-    max-width: 100vw;
     border-radius: 0;
-  }
-}
-@media (max-width: 780px) {
-  .banner {
-    padding: 0 0.5rem;
-  }
-  .heroimg {
-    height: 350px;
-    aspect-ratio: 1 / 1;
   }
 }
 @media (max-width: 700px) {
@@ -438,15 +429,20 @@ figure {
     height: auto;
   }
 }
+
 @media (max-width: 600px) {
   .banner {
-    font-size: 1.2rem;
     flex-direction: column-reverse;
+  }
+  .banner__intro {
+    padding: 0 1rem;
   }
   .banner__intro > h1 {
     letter-spacing: 0;
   }
-
+  .heroimg {
+    height: 366px;
+  }
   .menu__link {
     font-size: 0.8rem;
   }
