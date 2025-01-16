@@ -45,6 +45,7 @@ body {
 }
 p {
   max-width: 65ch;
+  text-wrap: balance;
   text-wrap: pretty;
 }
 a {
@@ -68,7 +69,6 @@ h3 {
   font-weight: 400;
   line-height: 1.2;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 h1,
 h2 {
@@ -98,10 +98,10 @@ h2 {
   font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   font-size: 1.25rem;
-  opacity: 80%;
-  text-decoration: underline;
+  opacity: 75%;
+
 }
-.nav__link:hover {
+.nav__link:hover, .nav__link:focus {
   text-decoration: underline;
   color: var(--primary-dark);
 }
@@ -111,7 +111,7 @@ h2 {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.nav__logo:hover {
+.nav__logo:hover, .nav__logo:focus {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -136,7 +136,7 @@ h2 {
   background-image: var(--gradient);
   background-size: 400% 400%;
   font-size: 1.25rem;
-  animation: gradient 12s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -211,7 +211,7 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
-.cta-text > p > a:hover {
+.cta-text > p > a:hover, .cta-text > p > a:focus {
   filter: hue-rotate(42deg);
   transition-duration: 0.8s;
 }
@@ -243,15 +243,14 @@ article.card img {
   object-fit: cover;
   border-radius: 8px;
 }
-article.card:hover {
+article.card:hover, article.card:focus {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
-  top: 3px;
+  top: 4px;
   filter: brightness(0.98);
 }
-article.card:active,
-article.card:focus {
+article.card:active {
   box-shadow: none;
-  top: 8px;
+  top: 9px;
   filter: brightness(0.9);
 }
 .card__header {
@@ -279,7 +278,7 @@ article.card:focus {
   z-index: 2;
   position: relative;
 }
-.coffeecat:hover {
+.coffeecat:hover, .coffeecat:focus {
   filter: brightness(1.1);
 }
 .coffeecat:active {
@@ -327,7 +326,7 @@ footer {
   height: 40px;
   opacity: 0.7;
 }
-.social:hover {
+.social:hover, social:focus {
   opacity: 1;
 }
 #rock_you {
@@ -409,15 +408,13 @@ figure {
 }
 
 /* Media Queries */
-@media (max-width: 900px) {
-  .project__image {
-    border-radius: 0;
-  }
-}
 @media (max-width: 700px) {
   .container {
     padding: 0 0.5rem;
     font-size: 1rem;
+  }
+  .banner {
+    flex-direction: row-reverse;
   }
   #logo {
     max-width: 5rem;
@@ -431,9 +428,6 @@ figure {
 }
 
 @media (max-width: 600px) {
-  .banner {
-    flex-direction: column-reverse;
-  }
   .banner__intro {
     padding: 0 1rem;
   }
