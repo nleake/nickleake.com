@@ -38,7 +38,7 @@
   margin: 0;
 }
 body {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", Georgia, "Times New Roman", Times, san-serif;
   line-height: 1.5;
   color: var(--ink);
   background-color: var(--offwhite);
@@ -97,9 +97,8 @@ h3 {
   max-width: 2rem;
 }
 .nav__link {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 .nav__link:hover {
   text-decoration: underline;
@@ -149,7 +148,7 @@ h3 {
   }
 }
 .heroimg {
-  height: 500px;
+  height: 420px;
 }
 .banner__intro {
   max-width: 500px;
@@ -201,11 +200,8 @@ h3 {
   }
 }
 .cta-text > p > a {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
   text-decoration: underline;
   color: var(--secondary);
-  letter-spacing: 0.1rem;
 }
 
 .cta-text > p > a:hover {
@@ -353,6 +349,7 @@ li > a:hover {
   text-align: center;
   font-size: clamp(24px, 13vw, 72px);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 .container p {
   padding: 0 1rem;
