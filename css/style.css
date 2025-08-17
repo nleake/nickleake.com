@@ -399,4 +399,7 @@ figure {
   article.card img {
     height: auto;
   }
+  h6 {
+    display: none;
+  }
 }
