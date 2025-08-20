@@ -122,10 +122,15 @@ h3 {
 .nav__logo:active {
   filter: brightness(0.3);
 }
+.nav__logo > h6 {
+  opacity: 85%;
+}
+
 #logo {
   max-width: 6rem;
   height: 80px;
 }
+
 
 /* Banners */
 
