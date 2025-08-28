@@ -86,12 +86,16 @@ h3 {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   border-bottom: 1px solid hsla(0, 0%, 91%, 0.44);
   padding: .25rem;
   background-color: var(--paper);
   box-shadow: 2px 4px 12px #00000014;
   gap: 1.5rem;
+}
+.nav__right {
+  display: flex;
+  gap: 1rem;
 }
 .menu__link {
   max-width: 2rem;
