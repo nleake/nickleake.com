@@ -193,7 +193,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
   justify-content: center;
   gap: 2rem;
-  max-width: 900px;
+  max-width: min(100vw, 900px);
   padding: 10px;
 }
 article.card {
