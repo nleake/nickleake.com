@@ -2,7 +2,7 @@
   --primary: #123859;
   --secondary: #1e5585;
   --offwhite: #fffeeb;
-  --ink: #051014;
+  --ink: #181f2f;
   --paper: #fff;
   --gradient: linear-gradient(
     42deg,
@@ -193,7 +193,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
   justify-content: center;
   gap: 2rem;
-  max-width: 100vw;
+  max-width: 900px;
   padding: 10px;
 }
 article.card {
@@ -284,7 +284,7 @@ footer {
   position: relative;
   left:1.5rem;
   margin-top: 1rem;
-  opacity: 50%;
+  opacity: 75%;
   
 }
 .footer__nav {
@@ -299,6 +299,7 @@ footer {
   width: 40px;
   height: 40px;
   opacity: 0.7;
+  border-radius: 9999px;
 }
 .social:hover {
   opacity: 1;
