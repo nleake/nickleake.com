@@ -344,7 +344,8 @@ figure {
   padding: 0.5rem 0;
 }
 .project__image {
-  width: clamp(300px, 100vw, 1200px);
+  width: clamp(300px, 100vw, 1400px);
+  border-radius: 1rem;
 }
 .project__link {
   font-size: 1.2rem;
