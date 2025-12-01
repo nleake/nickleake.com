@@ -190,7 +190,7 @@ h3 {
   flex-flow: row wrap; */
   display: grid;
   overflow: inherit;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 420px));
   justify-content: center;
   gap: 2rem;
   max-width: min(100vw, 900px);
