@@ -1,34 +1,13 @@
-:root {
-  --primary: #123859;
-  --secondary: #1e5585;
-  --offwhite: #fffeeb;
-  --ink: #181f2f;
-  --paper: #fff;
-  --gradient: linear-gradient(
-    42deg,
-    #132543,
-    #2d71bf 46%,
-    rgb(49, 16, 120) 100%
-  );
-  --theme-name: "light";
-}
-
-@media (prefers-color-scheme: dark) {
+/* Dark Color Palette */
   :root {
     --primary: #343334;
     --secondary: hsla(105, 97%, 85%, 0.863);
     --offwhite: #1a171e;
     --ink: #fffcf4;
     --paper: #a0ffa60a;
-    --gradient: linear-gradient(
-      42deg,
-      #0b242f,
-      #292c2f 46%,
-      rgb(18, 19, 66) 100%
-    );
+    --gradient: linear-gradient(315deg, #003153 0%, #1B1B1B 74%);
     --theme-name: "dark";
   }
-}
 
 /* Universal Styles */
 *, *::before, *::after {
@@ -87,9 +66,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid hsla(0, 0%, 91%, 0.44);
   padding: .25rem;
-  background-color: var(--paper);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
   box-shadow: 2px 4px 12px #00000014;
   gap: 1.5rem;
 }
@@ -101,7 +79,6 @@ h3 {
   max-width: 2rem;
 }
 .nav__link {
-  font-size: 1.25rem;
   font-weight: 400;
 }
 .nav__link:hover {
@@ -131,7 +108,6 @@ h3 {
 }
 
 #logo {
-  max-width: 6rem;
   height: 80px;
 }
 
@@ -200,10 +176,10 @@ article.card {
   position: relative;
   padding: 16px;
   border-radius: 16px;
-  background-color: var(--paper);
+  background-color: #34333454;
   background-blend-mode: multiply;
   box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 article.card img {
   height: 300px;
@@ -216,7 +192,8 @@ article.card:hover, article.card:focus {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
   top: 3px;
   filter: brightness(0.98);
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--secondary); */
+  scale: 1.02;
 }
 article.card:active {
   box-shadow: none;
@@ -276,8 +253,7 @@ footer {
   border-top: 1px solid rgba(51, 51, 51, 0.1);
   display: grid;
   place-items: center;
-  background-color: var(--primary);
-  color: white;
+  border-top: 1px solid var(--primary);
 }
 #footer_logo {
   max-width: 200px;
