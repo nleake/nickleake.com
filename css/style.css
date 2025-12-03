@@ -192,7 +192,7 @@ article.card:hover, article.card:focus {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
   top: 3px;
   filter: brightness(0.98);
-  border: 2px solid var(--secondary); */
+  border: 2px solid var(--secondary);
   scale: 1.02;
 }
 article.card:active {
