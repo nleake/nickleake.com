@@ -52,12 +52,13 @@ h3 {
   line-height: 1.1;
   overflow-wrap: break-word;
   text-wrap: balance;
+  margin-bottom: .5rem;
 
 }
 .section {
   display: flex;
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   align-items: center;
 }
 
@@ -66,10 +67,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: .25rem;
+  padding: .5rem;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
   box-shadow: 2px 4px 12px #00000014;
-  gap: 1.5rem;
 }
 .nav__right {
   display: flex;
@@ -135,7 +135,7 @@ h3 {
 }
 .hand {
   display: inline-block;
-  animation: shaka 1s ease-in-out infinite;
+  animation: shaka 1s ease-out infinite;
   margin-left: 0.5rem;
 }
 @keyframes shaka {
@@ -155,9 +155,8 @@ h3 {
 }
 
 .cta-text > p > a:hover {
-  filter: hue-rotate(42deg);
-  transition-duration: 0.8s;
-  color: var(--primary);
+  filter: hue-rotate(295deg);
+  transition-duration: 0.3s;
 }
 
 /* Project Cards */
@@ -295,17 +294,27 @@ li > a:hover {
   align-items: center;
   font-size: 1.1rem;
   margin: 0 auto;
-  padding-top: 1rem;
-}
-.container h1 {
-  text-align: center;
-  font-size: clamp(24px, 13vw, 72px);
-  margin-bottom: 0.5rem;
+  padding-top: clamp(2rem, 10vw, 4rem);
+  h1, h2 {
+    text-align: center;
+    font-size: clamp(20px, 8vw, 48px);
+  }
+  h1 {
+      font-size: clamp(24px, 13vw, 72px);
   text-transform: uppercase;
+  }
+  ul {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    li {
+      margin-bottom: 0.5rem;
+    };
+  }
 }
 .container p {
   padding: 0 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .container > p > a {
   color: var(--secondary);
