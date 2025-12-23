@@ -1,16 +1,17 @@
 /* Dark Color Palette */
-  :root {
-    --primary: #343334;
-    --secondary: hsla(105, 97%, 85%, 0.863);
-    --offwhite: #1a171e;
-    --ink: #fffcf4;
-    --paper: #a0ffa60a;
-    --gradient: linear-gradient(315deg, #003153 0%, #1B1B1B 74%);
-    --theme-name: "dark";
-  }
+:root {
+  --primary: #343334;
+  --secondary: hsla(105, 97%, 85%, 0.863);
+  --offwhite: #1a171e;
+  --ink: #fffcf4;
+  --gradient: linear-gradient(315deg, #003153 0%, #1b1b1b 74%);
+  --theme-name: "dark";
+}
 
 /* Universal Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -35,6 +36,11 @@ a {
   color: var(--ink);
   cursor: pointer;
 }
+a:hover {
+    color: var(--ink);
+    filter: opacity(0.9);
+    transition-duration: 0.3s;
+}
 img,
 picture,
 video,
@@ -52,8 +58,7 @@ h3 {
   line-height: 1.1;
   overflow-wrap: break-word;
   text-wrap: balance;
-  margin-bottom: .5rem;
-
+  margin-bottom: 0.5rem;
 }
 .section {
   display: flex;
@@ -67,7 +72,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: .5rem;
+  padding: 0.5rem;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
   box-shadow: 2px 4px 12px #00000014;
 }
@@ -111,7 +116,6 @@ h3 {
   height: 80px;
 }
 
-
 /* Banners */
 
 /* Call to Action */
@@ -154,11 +158,6 @@ h3 {
   color: var(--secondary);
 }
 
-.cta-text > p > a:hover {
-  filter: hue-rotate(295deg);
-  transition-duration: 0.3s;
-}
-
 /* Project Cards */
 .card-set {
   /* display: flex;
@@ -187,12 +186,12 @@ article.card img {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-article.card:hover, article.card:focus {
+article.card:hover,
+article.card:focus {
   box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
   top: 3px;
-  filter: brightness(0.98);
   border: 2px solid var(--secondary);
-  scale: 1.02;
+
 }
 article.card:active {
   box-shadow: none;
@@ -203,7 +202,7 @@ article.card:active {
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 #contact {
@@ -215,7 +214,7 @@ article.card:active {
   max-height: 250px;
   border-radius: 50%;
   border: 6px solid var(--secondary);
-  margin: 1.5rem 0 ;
+  margin: 1.5rem 0;
 }
 /* Coffee Cat*/
 .unionize {
@@ -224,12 +223,6 @@ article.card:active {
 .coffeecat {
   z-index: 2;
   position: relative;
-}
-.coffeecat:hover {
-  filter: brightness(1.1);
-}
-.coffeecat:active {
-  filter: brightness(0.5);
 }
 .solidarity {
   display: inline-block;
@@ -255,12 +248,11 @@ footer {
   border-top: 1px solid var(--primary);
 }
 #footer_logo {
-  max-width: 200px;
+  max-width: 175px;
   position: relative;
-  left:1.5rem;
+  left: 1.5rem;
   margin-top: 1rem;
-  opacity: 75%;
-  
+  opacity: 50%;
 }
 .footer__nav {
   display: flex;
@@ -295,13 +287,14 @@ li > a:hover {
   font-size: 1.1rem;
   margin: 0 auto;
   padding-top: clamp(2rem, 10vw, 4rem);
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
     font-size: clamp(20px, 8vw, 48px);
   }
   h1 {
-      font-size: clamp(24px, 13vw, 72px);
-  text-transform: uppercase;
+    font-size: clamp(24px, 13vw, 72px);
+    text-transform: uppercase;
   }
   ul {
     margin-left: 2rem;
@@ -309,7 +302,7 @@ li > a:hover {
     font-size: 1.25rem;
     li {
       margin-bottom: 0.5rem;
-    };
+    }
   }
 }
 .container p {
@@ -320,10 +313,6 @@ li > a:hover {
   color: var(--secondary);
   border-radius: 0.25em;
   text-decoration: underline;
-}
-.container > p > a:hover {
-  color: var(--ink);
-  filter: opacity(0.9);
 }
 figure {
   padding: 0.5rem 0;
