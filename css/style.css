@@ -131,6 +131,9 @@ h3 {
   font-size: 2rem;
   font-weight: 300;
 }
+.cta-text > h3:nth-child(1) {
+margin: 0;
+}
 #birb {
   position: relative;
   right: -32px;
@@ -248,11 +251,12 @@ footer {
   border-top: 1px solid var(--primary);
 }
 #footer_logo {
-  max-width: 175px;
+  max-width: 156px;
   position: relative;
   left: 1.5rem;
   margin-top: 1rem;
   opacity: 50%;
+  filter: contrast(.7);
 }
 .footer__nav {
   display: flex;
@@ -317,7 +321,7 @@ figure {
   padding: 0.5rem 0;
 }
 .project__image {
-  width: clamp(300px, 100vw, 1400px);
+  width: clamp(300px, 100vw, 1000px);
   border-radius: 1rem;
 }
 .project__link {
