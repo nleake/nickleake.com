@@ -262,6 +262,7 @@ footer {
   display: flex;
   margin-top: 1rem;
   gap: 16px;
+  padding-inline-start: 0;
 }
 .footer__nav > li {
   list-style-type: none;
