@@ -8,6 +8,26 @@
   --theme-name: "dark";
 }
 
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  src: url(../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+
+
 /* Universal Styles */
 *,
 *::before,
