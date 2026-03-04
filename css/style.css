@@ -10,20 +10,23 @@
 
 @font-face {
   font-family: 'Anton';
+  font-display: swap;
   font-style: normal;
-  src: url(../fonts/Anton-Regular.ttf);
+  src: local('Anton'), url(../fonts/Anton-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Poppins';
+  font-display: swap;
   font-style: bold;
-  src: url(../fonts/Poppins-Bold.ttf);
+  src: local('Poppins-Bold'), url(../fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: 'Poppins';
+  font-display: swap;
   font-style: normal;
-  src: url(../fonts/Poppins-Regular.ttf);
+  src: local('Poppins-Regular'), url(../fonts/Poppins-Regular.ttf);
 }
 
 
