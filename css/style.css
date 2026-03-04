@@ -203,7 +203,6 @@ article.card {
   background-color: #34333454;
   background-blend-mode: multiply;
   box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
-  font-size: 1.15rem;
 }
 article.card img {
   height: 300px;
