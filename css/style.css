@@ -10,6 +10,30 @@
   --card-bg: rgba(52, 51, 52, 0.33);
 }
 
+/* Custom Scrollbar */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-color: var(--secondary) var(--offwhite);
+    scrollbar-width: thin;
+  }
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--offwhite);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+  border: 2px solid var(--offwhite);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d1f7c4; /* Slightly brighter green on hover */
+}
+
 @font-face {
   font-family: 'Anton';
   font-display: swap;
@@ -85,6 +109,19 @@ h3 {
   text-wrap: balance;
   margin-bottom: 0.5rem;
 }
+
+h2 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  opacity: 0.9;
+  font-weight: 300;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -229,6 +266,17 @@ article.card:active {
   margin-bottom: 0.25rem;
 }
 
+/* Reveal Animations */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 #contact {
   padding: 4rem 0;
 }
@@ -312,27 +360,36 @@ li > a:hover {
   font-size: 1.1rem;
   margin: 0 auto;
   padding-top: clamp(2rem, 10vw, 4rem);
-  h1,
-  h2 {
-    text-align: center;
-    font-size: clamp(20px, 8vw, 48px);
-  }
-  h1 {
-    font-size: clamp(24px, 13vw, 72px);
-    text-transform: uppercase;
-  }
-  ul {
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
 }
+.container h1 {
+  text-align: center;
+  font-size: clamp(24px, 13vw, 72px);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.container h2 {
+  text-align: center;
+  font-size: clamp(20px, 8vw, 48px);
+  margin-bottom: 1.5rem;
+}
+.container ul {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+.container ul li {
+  margin-bottom: 0.5rem;
+}
+
 .container p {
   padding: 0 1rem;
   margin-bottom: 2rem;
+  /* Hanging Punctuation Suggestion */
+  text-indent: -0.5em;
+  padding-left: 1.5em;
 }
+
 .container > p > a {
   color: var(--secondary);
   border-radius: 0.25em;
