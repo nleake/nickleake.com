@@ -7,28 +7,18 @@
                     Nick Leake: Web Designer (Product, UX, UI, Illustration)
                 </title>
                 <meta content="Nick Leake is a web designer helping people build beautiful, accessible software. He specializes in prototyping and illustration, with a dash of coding and copywriting. Contact him today for a free creative consultation. This website lists Nick's projects and includes links to his social media accounts." name="description">
-                <style>.banner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:var(--primary);background-image:var(--gradient);background-size:400% 400%;font-size:1.25rem;}.heroimg{height:420px;filter:contrast(1.2)}.banner__intro{max-width:500px;color:#f2efef}.banner__intro>h1{font-size:clamp(42px,13vw,76px);letter-spacing:.02em;text-transform:uppercase;margin-bottom:.5rem}.banner__intro>p{padding-bottom:2rem}@media (max-width:900px){.heroimg{height:350px;aspect-ratio:1/1}.banner{padding:.5rem 0}}@media (max-width:750px){.banner{font-size:1.2rem;flex-direction:column-reverse}.banner__intro{max-width:85%}.banner__intro>h1{letter-spacing:0;margin-top:.5rem}.menu__link{font-size:.8rem}}@media (max-width:700px){.nav__logo{font-size:1.5rem}}</style>
-                <link href="css/style.min.css" rel="stylesheet">
+                <style>.banner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:var(--primary);background-image:var(--gradient);background-size:400% 400%;font-size:1.25rem;}.heroimg{height:420px;filter:contrast(1.2)}.banner__intro{max-width:500px;color:#f2efef}.banner__intro>h1{font-size:clamp(42px,13vw,76px);letter-spacing:.02em;text-transform:uppercase;margin-bottom:.5rem}.banner__intro>p{padding-bottom:2rem}@media (max-width:900px){.heroimg{height:350px;aspect-ratio:1/1}.banner{padding:.5rem 0}}@media (max-width:750px){.banner{font-size:1.2rem;flex-direction:column-reverse}.banner__intro{max-width:85%}.banner__intro>h1{letter-spacing:0;margin-top:.5rem}}@media (max-width:700px){.nav__logo{font-size:1.5rem}}</style>
+                <link href="css/style.css" rel="stylesheet">
                 <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     </head>
     <body>
-        <nav class="nav">
+        <a href="#main-content" class="screen-reader-text">Skip to content</a>
+        <nav class="nav" aria-label="Main navigation">
             <div class="nav__left">
                 <a class="nav__logo" href="index.html">
                     <img alt="a fist clutching a leek" id="logo" src="images/nickleake_site_logotype.svg">
                     </img>
                 </a>
-            </div>
-            <!-- <div class="nav__right">
-                <a class="nav__link" href="about-me.html">
-                    about
-                </a>
-                <a class="nav__link" href="mailto:nick@nickleake.com">
-                    contact
-                </a>
-                <!-- <a class="nav__link" href="mailto:nick@nickleake.com">
-                    blog
-                </a> -->
             </div>
         </nav>
         <header class="banner">
@@ -43,7 +33,7 @@
                 <img alt="a rad skeleton riding a bmx bike in the autumn leaves" fetchpriority="high" class="heroimg" src="images/skeletonbmx.webp"/>
             </div>
         </header>
-        <main>
+        <main id="main-content">
             <section class="section" id="work">
                 <p style="text-transform: uppercase; font-weight: 600">↓ Featured Projects ↓</p>
                 <div class="card-set">
@@ -80,7 +70,7 @@
                                         </p>
                                     </article>
                                 </a>
-                        <a href="https://dribbble.com/nick_leake" target="_blank" rel="noopener noreferrer">
+                        <a href="https://dribbble.com/nick_leake" target="_blank" rel="noopener noreferrer" aria-label="Check out more of Nick’s interface and illustration work on Dribbble (opens in a new tab)">
                     <article class="card">
                             <img alt="a gif scrolling through a concept site for Fossil Free London, an organization fighting climate change in the UK." src="https://cdn.dribbble.com/userupload/8642432/file/original-3626d1b3b7d8769b3fc913bf6ef3c70b.gif">
                                 <h2 class="card__header">
@@ -101,31 +91,31 @@
                            What's next?
                         </h3>
                         <p class="section__header">
-                            <a href="mailto:nick@nickleake.com">Let’s talk</a><span class="hand">🤙</span>
+                            <a href="mailto:nick@nickleake.com">Let’s talk</a><span class="hand" role="img" aria-label="shaka sign">🤙</span>
                         </p>
                     </div>
                 </div>
         </section>
         </main>
         <footer>
-            <ul class="footer__nav" id="footer">
+            <ul class="footer__nav" id="footer" aria-label="Social media links">
                 <li class="footer__link">
-                    <a href="https://www.linkedin.com/in/nickleake/">
+                    <a href="https://www.linkedin.com/in/nickleake/" aria-label="Visit Nick's LinkedIn profile">
                         <img alt="LinkedIn logo" class="social" src="images/socials/linkedin-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://dribbble.com/nick_leake">
+                    <a href="https://dribbble.com/nick_leake" aria-label="Visit Nick's Dribbble profile">
                         <img alt="Dribbble basketball logo" class="social" src="images/socials/dribbble-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://www.instagram.com/nleake/">
+                    <a href="https://www.instagram.com/nleake/" aria-label="Visit Nick's Instagram profile">
                         <img alt="Instagram logo" class="social" src="images/socials/instagram-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://github.com/nleake">
+                    <a href="https://github.com/nleake" aria-label="Visit Nick's GitHub profile">
                         <img alt="GitHub logo" class="social" src="images/socials/github-logo.svg"/>
                     </a>
                 </li>

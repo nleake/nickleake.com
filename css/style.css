@@ -6,6 +6,8 @@
   --ink: #fffcf4;
   --gradient: linear-gradient(315deg, #003153 0%, #1b1b1b 74%);
   --theme-name: "dark";
+  --border-color: rgba(51, 51, 51, 0.5);
+  --card-bg: rgba(52, 51, 52, 0.33);
 }
 
 @font-face {
@@ -96,15 +98,12 @@ h3 {
   align-items: center;
   justify-content: space-around;
   padding: 0.5rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
-  box-shadow: 2px 4px 12px #00000014;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 .nav__right {
   display: flex;
   gap: 1rem;
-}
-.menu__link {
-  max-width: 2rem;
 }
 .nav__link {
   font-weight: 400;
@@ -200,9 +199,9 @@ article.card {
   position: relative;
   padding: 16px;
   border-radius: 16px;
-  background-color: #34333454;
+  background-color: var(--card-bg);
   background-blend-mode: multiply;
-  box-shadow: 0px 6px 19px -6px rgba(66, 66, 66, 0.25);
+  box-shadow: 0px 6px 19px -6px rgba(0, 0, 0, 0.25);
 }
 article.card img {
   height: 300px;
@@ -213,7 +212,7 @@ article.card img {
 }
 article.card:hover,
 article.card:focus {
-  box-shadow: 0px 3px 8px rgba(66, 66, 66, 0.3);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   top: 3px;
   border: 2px solid var(--secondary);
 
@@ -267,10 +266,9 @@ article.card:active {
 /* Footer */
 footer {
   margin-top: 4rem;
-  border-top: 1px solid rgba(51, 51, 51, 0.1);
+  border-top: 1px solid var(--border-color);
   display: grid;
   place-items: center;
-  border-top: 1px solid var(--primary);
 }
 #footer_logo {
   max-width: 156px;
@@ -347,11 +345,6 @@ figure {
   width: clamp(300px, 100vw, 1000px);
   border-radius: 1rem;
 }
-.project__link {
-  font-size: 1.2rem;
-  text-decoration: underline;
-  filter: opacity(0.8);
-}
 .project-nav {
   margin: 1em 4em;
   font-weight: 700;
@@ -375,7 +368,26 @@ figure {
   padding: 0;
   position: absolute !important;
   width: 1px;
-  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: var(--secondary);
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: var(--offwhite);
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  padding: 15px 23px;
+  position: absolute;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above everything */
 }
 
 /* Media Queries */

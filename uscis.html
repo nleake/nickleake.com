@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-93178309-1">
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-    
-          gtag('config', 'UA-93178309-1');
-        </script>
         <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <title>
-                    Nick Leake: USCIS
-                </title>
-                <meta content="This page outlines the work Nick completed with United States Citizenship and Immigration Services as a federal IT specialist." name="description">
-                                <link href="css/style.css" rel="stylesheet">
-                                </link>
-                            </link>
-                        </link>
-                    </link>
-                </meta>
-            </meta>
-        </meta>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Nick Leake: USCIS</title>
+        <meta content="This page outlines the work Nick completed with United States Citizenship and Immigration Services as a federal IT specialist." name="description">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="nav">
+        <a href="#main-content" class="screen-reader-text">Skip to content</a>
+        <nav class="nav" aria-label="Main navigation">
             <div class="nav__left">
                 <a class="nav__logo" href="index.html">
                     <img alt="a fist clutching a leek" id="logo" src="images/nickleake_site_logotype.svg">
                     </img>
                 </a>
             </div>
-            <!-- <div class="nav__right">
-                <a class="nav__link" href="about-me.html">
-                    about
-                </a>
-                <a class="nav__link" href="mailto:nick@nickleake.com">
-                    contact
-                </a>
-                <!-- <a class="nav__link" href="mailto:nick@nickleake.com">
-                    blog
-                </a> -->
-            </div>
         </nav>
-        <div class="container">
+        <main class="container" id="main-content">
             <h1>
                 Global Asylum
             </h1>
@@ -86,7 +57,7 @@
 <p>By talking to users, we learned that their biggest frustrations involved data entry. You know how infuriating it is having to re-type your resume when applying for a job? Well, people at USCIS had to type in all the information from paper forms asylum applicants mailed in. Then they had to retype this information when submitting applicants for security checks.</p>
 
 <p>Our new system automated data entry where possible. We built APIs to automate security check submissions as well. The new system aggregated check results from over eight different law enforcement databases. It also sped up check responses from a matter of days to a matter of minutes.</p>
-<figure aria-label="graph representing change in time it took to process security checks: from 5 days down to 15 minutes" style="font-size: 1rem; margin-bottom: 2rem;">
+<figure role="img" aria-label="Security check processing time comparison: 5 days down to 15 minutes" style="font-size: 1rem; margin-bottom: 2rem;">
 <p style="margin-bottom: 0;">CHECK RESULTS: DAYS → MINUTES
 <br>
 [ ░░░░░░░░░░░░░░░░░░░░ ] 5 Days
@@ -107,35 +78,29 @@
 <li><strong>>80%</strong> faster security checks</li>
 <li><strong>70%</strong> reduction in manual data entry</li>
             </ul>
-             <!-- <a class="project-nav" href="bridges-to-science.html" tabindex="13">
+            <a class="project-nav" href="bridges-to-science.html">
                 Next Project: Bridges to Science
             </a>
-            <a class="project-nav" href="tdds.html" tabindex="13">
-                Previous Project: Treasury Design System
-            </a> -->
-            <a class="project-nav" href="bridges-to-science.html" tabindex="15">
-                Next Project: Bridges to Science
-            </a>
-        </div>
+        </main>
         <footer>
-            <ul class="footer__nav" id="footer">
+            <ul class="footer__nav" id="footer" aria-label="Social media links">
                 <li class="footer__link">
-                    <a href="https://www.linkedin.com/in/nickleake/">
+                    <a href="https://www.linkedin.com/in/nickleake/" aria-label="Visit Nick's LinkedIn profile">
                         <img alt="LinkedIn logo" class="social" src="images/socials/linkedin-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://dribbble.com/nick_leake">
+                    <a href="https://dribbble.com/nick_leake" aria-label="Visit Nick's Dribbble profile">
                         <img alt="Dribbble basketball logo" class="social" src="images/socials/dribbble-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://www.instagram.com/nleake/">
+                    <a href="https://www.instagram.com/nleake/" aria-label="Visit Nick's Instagram profile">
                         <img alt="Instagram logo" class="social" src="images/socials/instagram-logo.svg"/>
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="https://github.com/nleake">
+                    <a href="https://github.com/nleake" aria-label="Visit Nick's GitHub profile">
                         <img alt="GitHub logo" class="social" src="images/socials/github-logo.svg"/>
                     </a>
                 </li>
