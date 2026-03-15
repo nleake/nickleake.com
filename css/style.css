@@ -385,9 +385,6 @@ li > a:hover {
 .container p {
   padding: 0 1rem;
   margin-bottom: 2rem;
-  /* Hanging Punctuation Suggestion */
-  text-indent: -0.5em;
-  padding-left: 1.5em;
 }
 
 .container > p > a {
