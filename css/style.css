@@ -320,7 +320,7 @@ footer {
   align-items: center;
 }
 #footer_logo {
-  max-width: 156px;
+  width: 156px;
   position: relative;
   left: 1.5rem;
   margin-top: 1rem;
@@ -377,7 +377,6 @@ li > a:hover {
 .container h2 {
   text-align: center;
   font-size: clamp(20px, 8vw, 48px);
-  margin-bottom: 1.5rem;
 }
 .container ul {
   margin-bottom: 2rem;
