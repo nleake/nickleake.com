@@ -204,6 +204,49 @@ section {
   color: var(--secondary);
 }
 
+.cta-button {
+  display: inline-block;
+  background-color: var(--ink);
+  color: var(--offwhite);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+/* Hover and Active States */
+.cta-container {
+  text-align: center;
+  margin: 4rem 0; /* Adds breathing room above and below */
+}
+.cta-button:hover {
+  background-color: var(--primary);
+  color: var(--ink);
+  transform: translateY(-3px); /* Subtle lift */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cta-button:active {
+  transform: translateY(0); /* Presses back down when clicked */
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  background-color: var(--offwhite);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .cta-container {
+    margin: 3rem 0;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+  }
+}
+
 /* Project Cards */
 .card-set {
   /* display: flex;
@@ -297,7 +340,6 @@ article.card:active {
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2rem;
   align-items: start;
-  margin-top: 1rem;
   padding: 0 1rem;
 ;
 }
