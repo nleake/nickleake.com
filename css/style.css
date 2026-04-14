@@ -191,7 +191,8 @@ h3 {
   font-weight: 300;
 }
 .cta-text > h3:nth-child(1) {
-margin: 0;
+  margin: 0;
+  font-size: larger;
 }
 #birb {
   position: relative;
@@ -288,6 +289,84 @@ article.card:active {
   border: 6px solid var(--secondary);
   margin: 1.5rem 0;
 }
+/* --- Testimonials Section Styles --- */
+
+.testimonials-section {
+  padding: 2rem 0;
+  
+  .author-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem 0;
+
+  }
+  .author-title {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  margin: 0;
+  line-height: 1.4;
+  }
+}
+
+/* CSS Grid for responsive layout */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+  padding: 0 1rem;
+;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: var(--primary);
+  line-height: 1;
+  font-family: Georgia, serif;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Pushes the author info to the bottom evenly */
+  z-index: 1;
+}
+
+.testimonial-author {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1.5rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 3rem 1.5rem;
+  }
+}
 /* Coffee Cat*/
 .unionize {
   height: 250px;
@@ -380,7 +459,6 @@ li > a:hover {
 }
 .container ul {
   margin-bottom: 2rem;
-  font-size: 1.25rem;
   list-style-position: outside;
   padding-left: 1.5rem;
 }
