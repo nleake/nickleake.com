@@ -124,7 +124,7 @@ h3 {
 section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   align-items: center;
   place-content: center;
 }
