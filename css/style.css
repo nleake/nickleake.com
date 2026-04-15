@@ -87,7 +87,7 @@ a {
   transition: 0.3s;
 }
 a:hover {
-    filter: opacity(0.9);
+    filter: opacity(0.8);
 }
 img,
 picture,
@@ -144,13 +144,13 @@ section {
   transition: all 0.5s ease;
   display: flex;
   align-items: center;
-}
-.nav__logo:hover {
-  filter: brightness(1.1);
-  transform: scale(1.1);
-}
-.nav__logo:active {
-  filter: brightness(0.3);
+  &:hover {
+    filter: brightness(1.1);
+    transform: scale(1.1);
+  }
+  &:active {
+    filter: brightness(0.3);
+  }
 }
 
 #logo {
@@ -214,24 +214,24 @@ section {
   border-radius: 50px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  &:active {
+  transform: translateY(0); /* Presses back down when clicked */
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  background-color: var(--offwhite);
+  color: var(--ink);
+  }
 }
 
 /* Hover and Active States */
 .cta-container {
   text-align: center;
   margin: 4rem 0; /* Adds breathing room above and below */
-}
-.cta-button:hover {
-  background-color: var(--primary);
-  color: var(--ink);
-  transform: translateY(-3px); /* Subtle lift */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.cta-button:active {
-  transform: translateY(0); /* Presses back down when clicked */
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
-  background-color: var(--offwhite);
 }
 
 /* Mobile Adjustments */
@@ -327,7 +327,7 @@ article.card:active {
   }
   .author-title {
   font-size: 0.875rem;
-  color: var(--secondary);
+  opacity: 80%;
   margin: 0;
   line-height: 1.4;
   }
@@ -353,11 +353,10 @@ article.card:active {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .quote-icon {
