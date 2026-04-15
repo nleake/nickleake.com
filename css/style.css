@@ -340,7 +340,7 @@ article.card:active {
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2rem;
   align-items: start;
-  padding: 0 1rem;
+  padding: 1rem;
 ;
 }
 
