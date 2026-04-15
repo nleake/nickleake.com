@@ -1,10 +1,10 @@
 /* Dark Color Palette */
 :root {
   --primary: #343334;
-  --secondary: hsla(105, 97%, 85%, 0.863);
+  --secondary: #C9F299;
   --offwhite: #1a171e;
-  --ink: #fffcf4;
-  --gradient: linear-gradient(315deg, #003153 0%, #1b1b1b 74%);
+  --ink: #F5F0F6;
+  --gradient: linear-gradient(147deg, #1A171E 0%, #0f3b40 74%);
   --theme-name: "dark";
   --border-color: rgba(51, 51, 51, 0.5);
   --card-bg: rgba(52, 51, 52, 0.33);
@@ -117,7 +117,6 @@ h2 {
 
 h3 {
   font-size: clamp(1.25rem, 4vw, 1.75rem);
-  opacity: 0.9;
   font-weight: 300;
 }
 
@@ -382,7 +381,7 @@ article.card:active {
 }
 
 .testimonial-author {
-  border-top: 1px solid #f3f4f6;
+  border-top: 1px solid var(--ink);
   padding-top: 1.5rem;
 }
 
