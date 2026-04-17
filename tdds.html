@@ -6,6 +6,11 @@
         <title>Nick Leake: Treasury Design System</title>
         <meta content="This page outlines the work Nick completed with the United States Treasury Department as a federal IT specialist." name="description">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="js/tdds-accordion.js" defer></script>
+        <script src="js/tdds-button.js" defer></script>
     </head>
     <body>
         <a href="#main-content" class="screen-reader-text">Skip to content</a>
@@ -34,13 +39,92 @@
                 <img alt="Buttons and Cards pages of the Treasury Design System." src="images/projects/treasury/TDDS-Components2.webp" class="project__image">
             </figure>
             <figure>
-                <img alt="a screenshot of a Treasury webpage outlining policy issues and the Inflation Reduction Act." src="images/projects/treasury/treasury-site.webp" class="project__image">
-            </figure>
-            <figure>
                 <img alt="a screenshot of the Treasury design system documentation outlining how to use brand colors." src="images/projects/treasury/design-system.webp" class="project__image">
             </figure>
             <figure>
                 <img alt="a screenshot of the Treasury design system documentation outlining how to use form controls alongside the bep.gov home page." src="images/projects/treasury/form-controls.webp" class="project__image">
+            </figure>
+        </section>
+                <section id="demo-area" class="demo-section">
+            <div class="component-switcher">
+                <label for="component-select">Select a component to preview:</label>
+                <select id="component-select">
+                    <option value="accordion">Accordion</option>
+                    <option value="button">Button</option>
+                </select>
+            </div>
+
+            <div id="demo-accordion-wrapper" class="demo-grid">
+                <div class="demo-component">
+                    <tdds-accordion heading="First Amendment" open>
+                        <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+                    </tdds-accordion>
+                </div>
+                <article class="demo-docs">
+                    <h3>Accordion Guidelines</h3>
+                    <ul>
+                        <li><strong>When to use:</strong> Use to organize and hide content to avoid overwhelming users, especially when they only need specific pieces of information.</li>
+                        <li><strong>When not to use:</strong> Avoid for critical information that everyone must see or for low content volume where condensing adds unnecessary cognitive load.</li>
+                    </ul>
+                    <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+                        <button id="copy-accordion-code" class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.875rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span>Copy Code</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div id="demo-button-wrapper" class="demo-grid hidden">
+                <div class="demo-component">
+                    <div style="display: flex; justify-content: center; align-items: center; min-height: 100px;">
+                        <tdds-button id="preview-button" variant="primary" size="default">Primary Button</tdds-button>
+                    </div>
+                    
+                    <div class="button-controls">
+                        <div class="control-group">
+                            <label for="variant-select">Variant</label>
+                            <select id="variant-select">
+                                <option value="primary">Primary (Blue)</option>
+                                <option value="outline">Outline (Blue)</option>
+                                <option value="danger">Danger (Red)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label>Size</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="size-radio" value="small"> Small (11px)
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="size-radio" value="default" checked> Default (16px)
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="size-radio" value="large"> Large (20px)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="demo-docs">
+                    <h3 id="button-guidelines-heading">Primary Button Guidelines</h3>
+                    <ul id="button-guidelines-list">
+                        <li><strong>When to use:</strong> Use for the primary action on a page or form. It should be the most prominent action visually.</li>
+                        <li><strong>When not to use:</strong> Avoid having multiple primary buttons on the same page as it creates visual competition and confusion.</li>
+                    </ul>
+                    <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+                        <button id="copy-button-code" class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.875rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span>Copy Code</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="results">
+            <figure>
+                <img alt="a screenshot of a Treasury webpage outlining policy issues and the Inflation Reduction Act." src="images/projects/treasury/treasury-site.webp" class="project__image">
             </figure>
             <figure>
                 <img alt="a screenshot of data visualizations within the Treasury design system." src="images/projects/treasury/datavisualizations.webp" class="project__image">
@@ -53,6 +137,124 @@
             </figure>
             &nbsp;
         </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                console.log('Demo script initialized');
+                const componentSelect = document.getElementById('component-select');
+                const accordionWrapper = document.getElementById('demo-accordion-wrapper');
+                const buttonWrapper = document.getElementById('demo-button-wrapper');
+
+                if (!componentSelect || !accordionWrapper || !buttonWrapper) {
+                    console.error('Demo elements not found');
+                    return;
+                }
+
+                const handleComponentChange = (value) => {
+                    console.log('Switching to:', value);
+                    if (value === 'accordion') {
+                        accordionWrapper.classList.remove('hidden');
+                        buttonWrapper.classList.add('hidden');
+                    } else {
+                        accordionWrapper.classList.add('hidden');
+                        buttonWrapper.classList.remove('hidden');
+                    }
+                };
+
+                componentSelect.addEventListener('change', (e) => handleComponentChange(e.target.value));
+                
+                // Initialize state
+                handleComponentChange(componentSelect.value);
+
+                // Copy functionality helper
+                const copyToClipboard = async (text, btn) => {
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        const span = btn.querySelector('span');
+                        const originalText = span.textContent;
+                        span.textContent = 'Copied!';
+                        btn.style.backgroundColor = 'var(--secondary)';
+                        btn.style.color = 'var(--primary)';
+                        setTimeout(() => {
+                            span.textContent = originalText;
+                            btn.style.backgroundColor = '';
+                            btn.style.color = '';
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Failed to copy: ', err);
+                    }
+                };
+
+                // Accordion Copy
+                const copyAccordionBtn = document.getElementById('copy-accordion-code');
+                copyAccordionBtn.addEventListener('click', () => {
+                    const code = `<tdds-accordion heading="First Amendment" open>
+    <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof...</p>
+</tdds-accordion>`;
+                    copyToClipboard(code, copyAccordionBtn);
+                });
+
+                // Button interaction logic
+                const previewButton = document.getElementById('preview-button');
+                const variantSelect = document.getElementById('variant-select');
+                const sizeRadios = document.getElementsByName('size-radio');
+                const buttonHeading = document.getElementById('button-guidelines-heading');
+                const buttonList = document.getElementById('button-guidelines-list');
+                const copyButtonBtn = document.getElementById('copy-button-code');
+
+                if (previewButton && variantSelect && buttonHeading && buttonList) {
+                    const variantDocs = {
+                        primary: {
+                            heading: 'Primary Button Guidelines',
+                            use: 'Use for the primary action on a page or form. It should be the most prominent action visually.',
+                            avoid: 'Avoid having multiple primary buttons on the same page as it creates visual competition.'
+                        },
+                        outline: {
+                            heading: 'Outline Button Guidelines',
+                            use: 'Use for secondary actions that provide alternatives or additional functionality on the current page.',
+                            avoid: 'Don’t use for navigation between pages; use links for that instead.'
+                        },
+                        danger: {
+                            heading: 'Danger Button Guidelines',
+                            use: 'Use for destructive actions like deleting data or canceling a critical process.',
+                            avoid: 'Don’t use for non-destructive actions; it may cause unnecessary alarm.'
+                        }
+                    };
+
+                    const updateButtonPreview = () => {
+                        const variant = variantSelect.value;
+                        let size = 'default';
+                        sizeRadios.forEach(radio => {
+                            if (radio.checked) size = radio.value;
+                        });
+
+                        previewButton.setAttribute('variant', variant);
+                        previewButton.setAttribute('size', size);
+                        previewButton.textContent = variant.charAt(0).toUpperCase() + variant.slice(1) + ' Button';
+
+                        // Update docs
+                        const docs = variantDocs[variant];
+                        buttonHeading.textContent = docs.heading;
+                        buttonList.innerHTML = `
+                            <li><strong>When to use:</strong> ${docs.use}</li>
+                            <li><strong>When not to use:</strong> ${docs.avoid}</li>
+                        `;
+                    };
+
+                    variantSelect.addEventListener('change', updateButtonPreview);
+                    sizeRadios.forEach(radio => radio.addEventListener('change', updateButtonPreview));
+
+                    copyButtonBtn.addEventListener('click', () => {
+                        const variant = previewButton.getAttribute('variant');
+                        const size = previewButton.getAttribute('size');
+                        const text = previewButton.textContent;
+                        const code = `<tdds-button variant="${variant}" size="${size}">${text}</tdds-button>`;
+                        copyToClipboard(code, copyButtonBtn);
+                    });
+                }
+            });
+        </script>
+
             <section id="results">
                 <h2>Results</h2>
                 <ul>

@@ -551,6 +551,136 @@ figure {
   z-index: 100000; /* Above everything */
 }
 
+/* Demo Section Styles */
+.demo-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.demo-component {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.demo-docs {
+  color: var(--ink);
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.demo-docs h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.demo-docs ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+
+.demo-docs li {
+  margin-bottom: 1rem !important;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.demo-docs li strong {
+  color: var(--secondary);
+  display: block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+/* Component Switcher */
+.component-switcher {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--ink);
+}
+
+.component-switcher select {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: var(--primary);
+  color: var(--ink);
+  border: 1px solid var(--border-color);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Button Controls */
+.button-controls {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #212121;
+}
+
+.control-group select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #828282;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #212121;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* Media Queries */
 @media (max-width: 900px) {
   .project__image {
