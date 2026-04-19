@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="js/tdds-accordion.js" defer></script>
         <script src="js/tdds-button.js" defer></script>
+        <script src="js/tdds-datepicker.js" defer></script>
     </head>
     <body>
         <a href="#main-content" class="screen-reader-text">Skip to content</a>
@@ -51,6 +52,7 @@
                 <select id="component-select">
                     <option value="accordion">Accordion</option>
                     <option value="button">Button</option>
+                    <option value="datepicker">Date Picker</option>
                 </select>
             </div>
 
@@ -121,6 +123,27 @@
                     </div>
                 </article>
             </div>
+
+            <div id="demo-datepicker-wrapper" class="demo-grid hidden">
+                <div class="demo-component">
+                    <div style="display: flex; justify-content: center; align-items: center; min-height: 200px;">
+                        <tdds-datepicker id="preview-datepicker" label="Appointment date" hint="mm/dd/yyyy"></tdds-datepicker>
+                    </div>
+                </div>
+                <article class="demo-docs">
+                    <h3>Date Picker Guidelines</h3>
+                    <ul>
+                        <li><strong>When to use:</strong> Use to help users pick a date, especially when they need to see the day of the week or when the date is relative to today.</li>
+                        <li><strong>When not to use:</strong> Avoid for well-known dates like birth dates, where typing or selecting from lists is often faster.</li>
+                    </ul>
+                    <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+                        <button id="copy-datepicker-code" class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.875rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span>Copy Code</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="results">
             <figure>
@@ -144,20 +167,25 @@
                 const componentSelect = document.getElementById('component-select');
                 const accordionWrapper = document.getElementById('demo-accordion-wrapper');
                 const buttonWrapper = document.getElementById('demo-button-wrapper');
+                const datepickerWrapper = document.getElementById('demo-datepicker-wrapper');
 
-                if (!componentSelect || !accordionWrapper || !buttonWrapper) {
+                if (!componentSelect || !accordionWrapper || !buttonWrapper || !datepickerWrapper) {
                     console.error('Demo elements not found');
                     return;
                 }
 
                 const handleComponentChange = (value) => {
                     console.log('Switching to:', value);
+                    accordionWrapper.classList.add('hidden');
+                    buttonWrapper.classList.add('hidden');
+                    datepickerWrapper.classList.add('hidden');
+
                     if (value === 'accordion') {
                         accordionWrapper.classList.remove('hidden');
-                        buttonWrapper.classList.add('hidden');
-                    } else {
-                        accordionWrapper.classList.add('hidden');
+                    } else if (value === 'button') {
                         buttonWrapper.classList.remove('hidden');
+                    } else if (value === 'datepicker') {
+                        datepickerWrapper.classList.remove('hidden');
                     }
                 };
 
@@ -250,6 +278,15 @@
                         const text = previewButton.textContent;
                         const code = `<tdds-button variant="${variant}" size="${size}">${text}</tdds-button>`;
                         copyToClipboard(code, copyButtonBtn);
+                    });
+                }
+
+                // Datepicker Copy
+                const copyDatepickerBtn = document.getElementById('copy-datepicker-code');
+                if (copyDatepickerBtn) {
+                    copyDatepickerBtn.addEventListener('click', () => {
+                        const code = `<tdds-datepicker label="Appointment date" hint="mm/dd/yyyy"></tdds-datepicker>`;
+                        copyToClipboard(code, copyDatepickerBtn);
                     });
                 }
             });
