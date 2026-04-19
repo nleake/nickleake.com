@@ -277,7 +277,11 @@ article.card:hover,
 article.card:focus {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   top: 3px;
+  opacity: 100%;
   border: 2px solid var(--secondary);
+  & > .card__header {
+    color: var(--secondary);
+  }
 
 }
 article.card:active {
