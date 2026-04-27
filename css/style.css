@@ -384,7 +384,7 @@ article.card:active {
 }
 
 .testimonial-author {
-  border-top: 1px solid var(--ink);
+  border-top: 1px solid var(--primary);
   padding-top: 1rem;
 }
 
