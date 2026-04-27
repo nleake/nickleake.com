@@ -116,7 +116,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
   font-weight: 300;
 }
 
@@ -721,7 +721,7 @@ figure {
   font-size: clamp(3rem, 6vw, 5rem);
   color: var(--secondary);
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: .25rem;
   text-transform: uppercase;
   display: block;
 }
