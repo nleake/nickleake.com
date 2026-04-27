@@ -708,13 +708,13 @@ figure {
   align-items: center;
   transition: all 0.3s ease;
   height: 100%;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
 }
 
-.metric-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--secondary);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-}
+
 
 .metric-value {
   font-family: "Anton", sans-serif;
