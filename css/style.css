@@ -157,9 +157,11 @@ section {
   height: 80px;
 }
 
-/* Banners */
-
 /* Call to Action */
+.cta-container {
+  text-align: center;
+  margin: 4rem 0; /* Adds breathing room above and below */
+}
 .calltoaction {
   display: flex;
   align-items: center;
@@ -226,12 +228,6 @@ section {
   background-color: var(--offwhite);
   color: var(--ink);
   }
-}
-
-/* Hover and Active States */
-.cta-container {
-  text-align: center;
-  margin: 4rem 0; /* Adds breathing room above and below */
 }
 
 /* Mobile Adjustments */
@@ -321,8 +317,8 @@ article.card:active {
   border: 6px solid var(--secondary);
   margin: 1.5rem 0;
 }
-/* --- Testimonials Section Styles --- */
 
+/* --- Testimonials Section Styles --- */
 .testimonials-section {
   padding: 2rem 0;
   
@@ -716,8 +712,6 @@ figure {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   }
 }
-
-
 
 .metric-value {
   font-family: "Anton", sans-serif;
