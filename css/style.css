@@ -247,6 +247,9 @@ section {
 }
 
 /* Project Cards */
+#work {
+  padding: 1.5rem 1rem;
+}
 .card-set {
   /* display: flex;
   flex-flow: row wrap; */
@@ -754,9 +757,6 @@ figure {
   }
 }
 @media (max-width: 750px) {
-  #work {
-    padding: 1.5rem 1rem;
-  }
   .calltoaction {
     flex-direction: column;
   }
