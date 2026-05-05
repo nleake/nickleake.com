@@ -123,7 +123,7 @@ h3 {
 section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   align-items: center;
   place-content: center;
 }
@@ -472,9 +472,11 @@ li > a:hover {
   font-size: 1.1rem;
   margin: 0 auto;
   padding-top: clamp(2rem, 10vw, 4rem);
+  width: 90%;
+  max-width: 900px;
 }
 .container h1 {
-  text-align: center;
+  /* text-align: center; */
   font-size: clamp(24px, 13vw, 72px);
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -482,6 +484,7 @@ li > a:hover {
 .container h2 {
   text-align: center;
   font-size: clamp(20px, 8vw, 48px);
+  padding-top: 1rem;
 }
 .container ul {
   margin-bottom: 2rem;
@@ -510,7 +513,6 @@ figure {
   border-radius: 1rem;
 }
 .project-nav {
-  margin: 1em 4em;
   font-weight: 700;
   text-decoration: underline;
 }
