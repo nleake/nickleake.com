@@ -472,7 +472,7 @@ li > a:hover {
   font-size: 1.1rem;
   margin: 0 auto;
   padding-top: clamp(2rem, 10vw, 4rem);
-  width: 90%;
+  width: 95%;
   max-width: 900px;
 }
 .container h1 {
@@ -497,7 +497,7 @@ li > a:hover {
 
 .container p {
   padding: 0 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .container > p > a {
@@ -517,7 +517,7 @@ figure {
   text-decoration: underline;
 }
 .youtube {
-  width: clamp(300px, 100vw, 1200px);
+  width: clamp(300px, 100vw, 900px);
   aspect-ratio: 16/9;
   iframe {
     width: 100%;
@@ -573,7 +573,7 @@ figure {
 
 .demo-component {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -584,7 +584,7 @@ figure {
 .demo-docs {
   color: var(--ink);
   background: var(--card-bg);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
 }
 
@@ -600,7 +600,7 @@ figure {
 }
 
 .demo-docs li {
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -699,7 +699,7 @@ figure {
 
 .metric-card {
   background: var(--card-bg);
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   border-radius: 16px;
   border: 1px solid var(--border-color);
   text-align: center;
@@ -741,7 +741,7 @@ figure {
   }
   
   .metric-card {
-    padding: 2.5rem 1.5rem;
+    padding: 1.5rem 2rem;
   }
 }
 
