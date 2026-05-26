@@ -473,10 +473,9 @@ li > a:hover {
   margin: 0 auto;
   padding-top: clamp(2rem, 10vw, 4rem);
   width: 95%;
-  max-width: 900px;
 }
 .container h1 {
-  /* text-align: center; */
+  text-align: center;
   font-size: clamp(24px, 13vw, 72px);
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -699,7 +698,7 @@ figure {
 
 .metric-card {
   background: var(--card-bg);
-  padding: 2rem 1rem;
+  padding: 2rem;
   border-radius: 16px;
   border: 1px solid var(--border-color);
   text-align: center;
@@ -717,7 +716,7 @@ figure {
 
 .metric-value {
   font-family: "Anton", sans-serif;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(3rem, 6vw, 4rem);
   color: var(--secondary);
   line-height: 1;
   margin-bottom: .25rem;
@@ -744,6 +743,11 @@ figure {
     padding: 1.5rem 2rem;
   }
 }
+
+#more {
+  padding-top: 4rem;
+}
+
 
 /* Media Queries */
 @media (max-width: 900px) {
