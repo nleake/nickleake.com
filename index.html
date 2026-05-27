@@ -1,132 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <title>
-                    Nick Leake: Web Designer (Product, UX, UI, Illustration)
-                </title>
-                <meta content="Nick Leake is a web designer helping people build beautiful, accessible software. He specializes in prototyping and illustration, with a dash of coding and copywriting. Contact him today for a free creative consultation. This website lists Nick's projects and includes links to his social media accounts." name="description">
-                <style>.banner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;background-color:var(--primary);background-image:var(--gradient);background-size:400% 400%;font-size:1.25rem;}.heroimg{height:500px;filter:contrast(1.2)}.banner__intro{max-width:500px;color:#f2efef}.banner__intro>h1{font-size:clamp(42px,13vw,76px);letter-spacing:.02em;text-transform:uppercase;margin-bottom:.5rem}.banner__intro>p{padding-bottom:2rem}@media (max-width:900px){.heroimg{height:350px;aspect-ratio:1/1}.banner{padding:.5rem 0}}@media (max-width:750px){.banner{font-size:1.2rem;flex-direction:column-reverse}.banner__intro{max-width:90%}.banner__intro>h1{letter-spacing:0;margin-top:.5rem}}@media (max-width:700px){.nav__logo{font-size:1.5rem}}</style>
-                <link href="css/style.css" rel="stylesheet">
-                <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    </head>
-    <body>
-        <a href="#main-content" class="screen-reader-text">Skip to content</a>
-        <nav class="nav" aria-label="Main navigation">
-            <div class="nav__left">
-                <a class="nav__logo" href="index.html">
-                    <img alt="a fist clutching a leek" id="logo" src="images/nickleake_site_logotype.svg">
-                </a>
-            </div>
-        </nav>
-        <header class="banner">
-            <div class="banner__intro">
-                <h1>Radical design, better results.</h1>
-                <p>
-                    <a href="about-me.html"style="text-decoration: underline;
-  color: var(--secondary);">Nick Leake</a> is a web designer based in Baltimore. He crafts killer solutions to tough problems using type, illustration, and code. Check out his work below or <a href="mailto:heynickleake@gmail.com" style="text-decoration: underline; color: var(--secondary);">contact</a> him for a free consultation.
-                </p>
-            </div>
-            <div class="hero-image-container">
-                <img alt="a rad skeleton riding a bmx bike in the autumn leaves" fetchpriority="high" class="heroimg" srcset="images/skeletonbmx.webp, images/skeletonbmx-small.webp" src="images/skeletonbmx.webp"/>
-            </div>
-        </header>
-        <main id="main-content">
-            <section class="section" id="work">
-                <p style="text-transform: uppercase; font-weight: 600">↓ Featured Projects ↓</p>
-                <div class="card-set">
-                        <a href="tdds.html">
-                    <article class="card">
-                            <img alt="a pen and ink sketch of the facade of the US Treasury Department building in Washington, DC." srcset="images/treasury-building.webp, images/treasury-building-small.webp" src="images/treasury-building.webp">
-                                <h2 class="card__header">
-                                    U.S. TREASURY DEPT
-                                </h2>
-                                <p class="card__description">
-                                    Used design systems to move fast, fix things, and grow the culture.
-                                </p>
-                            </article>
-                        </a>
-                    <a href="uscis.html">
-                    <article class="card">
-                            <img alt="USCIS case study" srcset="images/projects/uscis/uscis_award.webp, images/projects/uscis/uscis_award-small.webp" src="images/projects/uscis/uscis_award.webp">
-                                <h2 class="card__header">
-                                    GLOBAL ASYLUM
-                                </h2>
-                                <p class="card__description">
-                                    Streamlined refugee paperwork and saved USCIS over $10M a year.
-                                </p>
-                            </article>
-                        </a>
-                        <a href="bridges-to-science.html">
-                            <article class="card">
-                                    <img alt="Case study for Bridges to Science website redesign." srcset="images/projects/b2s/b2sMockup.webp, images/projects/b2s/b2sMockup-small.webp"src="images/projects/b2s/b2sMockup.webp">
-                                        <h2 class="card__header">
-                                            BRIDGES TO SCIENCE
-                                        </h2>
-                                        <p class="card__description">
-                                            Amplified a nonprofit’s message by designing a new website.
-                                        </p>
-                                    </article>
-                                </a>
-                        <a href="https://dribbble.com/nick_leake" target="_blank" rel="noopener noreferrer" aria-label="Check out more of Nick’s interface and illustration work on Dribbble (opens in a new tab)">
-                    <article class="card">
-                            <img alt="a gif scrolling through a concept site for Fossil Free London, an organization fighting climate change in the UK." src="https://cdn.dribbble.com/userupload/8642432/file/original-3626d1b3b7d8769b3fc913bf6ef3c70b.gif">
-                                <h2 class="card__header">
-                                    ADDITIONAL PROJECTS
-                                </h2>
-                                <p class="card__description">
-                                    Check out more of Nick’s interface and illustration work.
-                                </p>
-                            </article>
-                        </a>
-                </div>
-            </section>
-        <section class="section" id="contact">
-                <div class="calltoaction">
-                        <img src="images/bluebirb.webp" alt="a funky drawing of a bluebird with a huge beak" id="birb">
-                    <div class="cta-text">
-                        <h3>
-                           What's next?
-                        </h3>
-                        <p class="section__header">
-                            <a href="mailto:heynickleake@gmail.com">Let’s talk</a><span class="hand" role="img" aria-label="shaka sign">🤙</span>
-                        </p>
-                    </div>
-                </div>
-        </section>
-        </main>
-        <footer>
-            <ul class="footer__nav" id="footer" aria-label="Social media links">
-                <li class="footer__link">
-                    <a href="https://www.linkedin.com/in/nickleake/" aria-label="Visit Nick's LinkedIn profile">
-                        <img alt="LinkedIn logo" class="social" src="images/socials/linkedin-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://dribbble.com/nick_leake" aria-label="Visit Nick's Dribbble profile">
-                        <img alt="Dribbble basketball logo" class="social" src="images/socials/dribbble-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://www.instagram.com/nleake/" aria-label="Visit Nick's Instagram profile">
-                        <img alt="Instagram logo" class="social" src="images/socials/instagram-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://github.com/nleake" aria-label="Visit Nick's GitHub profile">
-                        <img alt="GitHub logo" class="social" src="images/socials/github-logo.svg">
-                    </a>
-                </li>
-            </ul>
-            <a href="index.html">
-                <img alt="logo for Leek Designs of a fist clutching a leek surrounded by stars" id="footer_logo" src="images/leek_logo_bw.svg">
-            </a>
-            <div class="rock_you">
-                <img id="rock_you" src="images/rock_on.webp"  loading="lazy" alt="a crowd of raised hands">
-            </div>
-        </footer>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nick Leake: Web Designer (Product, UX, UI, Illustration)</title>
+    <meta
+      content="Nick Leake is a web designer helping people build beautiful, accessible software. He specializes in prototyping and illustration, with a dash of coding and copywriting. Contact him today for a free creative consultation. This website lists Nick's projects and includes links to his social media accounts."
+      name="description"
+    />
+    <style>
+      .banner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary);
+        background-image: var(--gradient);
+        background-size: 400% 400%;
+        font-size: 1.25rem;
+      }
+      .heroimg {
+        height: 500px;
+        filter: contrast(1.2);
+      }
+      .banner__intro {
+        max-width: 500px;
+        color: #f2efef;
+      }
+      .banner__intro > h1 {
+        font-size: clamp(42px, 13vw, 76px);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+      .banner__intro > p {
+        padding-bottom: 2rem;
+      }
+      @media (max-width: 900px) {
+        .heroimg {
+          height: 350px;
+          aspect-ratio: 1/1;
+        }
+        .banner {
+          padding: 0.5rem 0;
+        }
+      }
+      @media (max-width: 750px) {
+        .banner {
+          font-size: 1.2rem;
+          flex-direction: column-reverse;
+        }
+        .banner__intro {
+          max-width: 90%;
+        }
+        .banner__intro > h1 {
+          letter-spacing: 0;
+          margin-top: 0.5rem;
+        }
+      }
+      @media (max-width: 700px) {
+        .nav__logo {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <a href="#main-content" class="screen-reader-text">Skip to content</a>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__left">
+        <a class="nav__logo" href="index.html">
+          <img
+            alt="a fist clutching a leek"
+            id="logo"
+            src="images/nickleake_site_logotype.svg"
+          />
+        </a>
+      </div>
+    </nav>
+    <header class="banner">
+      <div class="banner__intro">
+        <h1>Radical design, better results.</h1>
+        <p>
+          <a
+            href="about-me.html"
+            style="text-decoration: underline; color: var(--secondary)"
+            >Nick Leake</a
+          >
+          is a web designer based in Baltimore. He crafts killer solutions to
+          tough problems using type, illustration, and code. Check out his work
+          below or
+          <a
+            href="mailto:heynickleake@gmail.com"
+            style="text-decoration: underline; color: var(--secondary)"
+            >email</a
+          >
+          him for a free consultation.
+        </p>
+      </div>
+      <div class="hero-image-container">
+        <img
+          alt="a rad skeleton riding a bmx bike in the autumn leaves"
+          fetchpriority="high"
+          class="heroimg"
+          srcset="images/skeletonbmx.webp, images/skeletonbmx-small.webp"
+          src="images/skeletonbmx.webp"
+        />
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="section" id="work">
+        <p style="text-transform: uppercase; font-weight: 600">
+          ↓ Featured Projects ↓
+        </p>
+        <div class="card-set">
+          <a href="tdds.html">
+            <article class="card">
+              <img
+                alt="a pen and ink sketch of the facade of the US Treasury Department building in Washington, DC."
+                srcset="
+                  images/treasury-building.webp,
+                  images/treasury-building-small.webp
+                "
+                src="images/treasury-building.webp"
+              />
+              <h2 class="card__header">U.S. TREASURY DEPT</h2>
+              <p class="card__description">
+                Used design systems to move fast, fix things, and grow the
+                culture.
+              </p>
+            </article>
+          </a>
+          <a href="uscis.html">
+            <article class="card">
+              <img
+                alt="USCIS case study"
+                srcset="
+                  images/projects/uscis/uscis_award.webp,
+                  images/projects/uscis/uscis_award-small.webp
+                "
+                src="images/projects/uscis/uscis_award.webp"
+              />
+              <h2 class="card__header">GLOBAL ASYLUM</h2>
+              <p class="card__description">
+                Streamlined refugee paperwork and saved USCIS over $10M a year.
+              </p>
+            </article>
+          </a>
+          <a href="bridges-to-science.html">
+            <article class="card">
+              <img
+                alt="Case study for Bridges to Science website redesign."
+                srcset="
+                  images/projects/b2s/b2sMockup.webp,
+                  images/projects/b2s/b2sMockup-small.webp
+                "
+                src="images/projects/b2s/b2sMockup.webp"
+              />
+              <h2 class="card__header">BRIDGES TO SCIENCE</h2>
+              <p class="card__description">
+                Amplified a nonprofit’s message by designing a new website.
+              </p>
+            </article>
+          </a>
+          <a
+            href="https://dribbble.com/nick_leake"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Check out more of Nick’s interface and illustration work on Dribbble (opens in a new tab)"
+          >
+            <article class="card">
+              <img
+                alt="a gif scrolling through a concept site for Fossil Free London, an organization fighting climate change in the UK."
+                src="https://cdn.dribbble.com/userupload/8642432/file/original-3626d1b3b7d8769b3fc913bf6ef3c70b.gif"
+              />
+              <h2 class="card__header">ADDITIONAL PROJECTS</h2>
+              <p class="card__description">
+                Check out more of Nick’s interface and illustration work.
+              </p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <!-- <section class="section" id="process">
+        <h2>Move with Purpose</h2>
+        <p>
+          I map messy workflows, prototype fast, test with real users, and turn
+          good patterns into reusable systems. I care about accessibility, plain
+          language, and visual design that has a job. TODO: Add illustration
+          circles after this description
+        </p>
+      </section> -->
+      <section class="section" id="contact">
+        <div class="calltoaction">
+          <img
+            src="images/bluebirb.webp"
+            alt="a funky drawing of a bluebird with a huge beak"
+            id="birb"
+          />
+          <div class="cta-text">
+            <h3>What's next?</h3>
+            <p class="section__header">
+              <a href="mailto:heynickleake@gmail.com">Let’s talk</a
+              ><span class="hand" role="img" aria-label="shaka sign">🤙</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer__nav" id="footer" aria-label="Social media links">
+        <li class="footer__link">
+          <a
+            href="https://www.linkedin.com/in/nickleake/"
+            aria-label="Visit Nick's LinkedIn profile"
+          >
+            <img
+              alt="LinkedIn logo"
+              class="social"
+              src="images/socials/linkedin-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://dribbble.com/nick_leake"
+            aria-label="Visit Nick's Dribbble profile"
+          >
+            <img
+              alt="Dribbble basketball logo"
+              class="social"
+              src="images/socials/dribbble-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://www.instagram.com/nleake/"
+            aria-label="Visit Nick's Instagram profile"
+          >
+            <img
+              alt="Instagram logo"
+              class="social"
+              src="images/socials/instagram-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://github.com/nleake"
+            aria-label="Visit Nick's GitHub profile"
+          >
+            <img
+              alt="GitHub logo"
+              class="social"
+              src="images/socials/github-logo.svg"
+            />
+          </a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <img
+          alt="logo for Leek Designs of a fist clutching a leek surrounded by stars"
+          id="footer_logo"
+          src="images/leek_logo_bw.svg"
+        />
+      </a>
+      <div class="rock_you">
+        <img
+          id="rock_you"
+          src="images/rock_on.webp"
+          loading="lazy"
+          alt="a crowd of raised hands"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
-<script async="" src="js/index.js" type="text/javascript">
-</script>
+<script async="" src="js/index.js" type="text/javascript"></script>

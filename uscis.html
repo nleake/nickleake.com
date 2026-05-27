@@ -1,129 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Nick Leake: USCIS</title>
-        <meta content="This page outlines the work Nick completed with United States Citizenship and Immigration Services as a federal IT specialist." name="description">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <a href="#main-content" class="screen-reader-text">Skip to content</a>
-        <nav class="nav" aria-label="Main navigation">
-            <div class="nav__left">
-                <a class="nav__logo" href="index.html">
-                    <img alt="a fist clutching a leek" id="logo" src="images/nickleake_site_logotype.svg">
-                </a>
-            </div>
-        </nav>
-        <main class="container" id="main-content">
-            <h1>
-                Global Asylum
-            </h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nick Leake: USCIS</title>
+    <meta
+      content="This page outlines the work Nick completed with United States Citizenship and Immigration Services as a federal IT specialist."
+      name="description"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="#main-content" class="screen-reader-text">Skip to content</a>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__left">
+        <a class="nav__logo" href="index.html">
+          <img
+            alt="a fist clutching a leek"
+            id="logo"
+            src="images/nickleake_site_logotype.svg"
+          />
+        </a>
+      </div>
+    </nav>
+    <main class="container" id="main-content">
+      <h1>Global Asylum</h1>
 
-            <section id="intro">
-                    <figure>
-        <img alt="The mainframe immigration system we replaced, RAPS. A black screen with a mess of different colored text and inputs scattered about." class="project__image" loading="lazy" src="images/projects/uscis/RAPS.webp">
-    </figure>
-    <h2>Mainframe Modernization</h2>
-                <p>
-                    It's 2018 and I'm working at United States Citizenship and Immigration Services (USCIS). With over 300,000 cases in the backlog, people seeking asylum spend years waiting for a decision.  Cases stall in legal or procedural limbo while many applicants wait in detention. Leadership tasks my team to build a new case management system.</p>
-    <p>How do we create an app where officers can decide asylum cases faster and *try to* uphold fairness and the law? Take a mainframe system from the 80s and chuck it into the cloud. Establish an intuitive deck of case information cards. Develop flexible design patterns backed by user research. Write new APIs to automate away drudge work, so officers can focus on the applicants.</p>
-    <p>I was responsible for design, testing, and managing our team's work. Our goal was to cut operating costs and improve security by replacing the old mainframe. One year later, we launched a web app that saved over $10 million a year thanks to user research and automation.</p>
-    <figure>
-        <img alt="A refugee officer preparing documents for an interview." class="project__image" loading="lazy" src="images/projects/uscis/officer-prep.webp">
-    </figure>
-    <figure>
-        <img alt="Our persona for an adjudicating officer explaining their story, paint points, and goals." class="project__image" loading="lazy" src="images/projects/uscis/Adjudicating Officer-min.webp">
-        <figcaption style="text-align: center; padding: .5em; font-size: .85em;">Our persona for an adjudicating officer explaining their story, pain points, and goals.</figcaption>
-    </figure>
-            </section>
-            <section id="learnings">
-                <figure>
-                    <img alt="Hotline Bling meme of Drake rejecting a single column form in favor of a multi-column form." class="project__image" loading="lazy" src="images/projects/uscis/drake_nah.webp">
-                </figure>
-                <h2>Best Practices Not Always Best</h2>
-                <p>One of our usability tests involved a web form using industry best practices: single-column, many pages. This layout usually makes filling out forms less overwhelming. Turns out this pattern doesn’t work when officers need to review large amounts of information at a glance. We opted for a familiar layout mirroring the paper forms that applicants mail to USCIS.</p>
-                <p>Since officers needed to see all the information at once to make decisions. We designed a deck of cards that grouped related information together. This design made it easier for officers to find the information they needed and make decisions faster.</p>
-                <figure>
-                    <img alt="The updated case editing UI utilizes a card based interface to display applicant case data" class="project__image" loading="lazy" src="images/projects/uscis/global-screens.webp">
-                </figure>
-            </section>
-            <section id="improvements">
+      <section id="intro">
+        <figure>
+          <img
+            alt="The mainframe immigration system we replaced, RAPS. A black screen with a mess of different colored text and inputs scattered about."
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/RAPS.webp"
+          />
+        </figure>
+        <h2>Mainframe Modernization</h2>
+        <p>
+          It's 2018 and I'm working at United States Citizenship and Immigration
+          Services (USCIS). With over 300,000 cases pending, asylum seekers
+          spend years waiting for a decision. Cases stall in legal or procedural
+          limbo while many applicants wait in detention. Officers decide cases
+          under tight deadlines using a mainframe system built in the 80s.
+        </p>
+        <p>
+          How do we leverage technology to help officers decide asylum cases
+          faster and *try to* uphold fairness and the law? Chuck the legacy
+          system into the cloud. Establish an intuitive deck of case information
+          cards. Develop flexible design patterns backed by user research. Write
+          new APIs to automate away drudge work, so officers can focus on the
+          applicants.
+        </p>
+        <p>
+          I was responsible for design, testing, and managing our team's work.
+          Our goal was to cut operating costs and improve security by replacing
+          the old system within a year.
+          <strong
+            >Our work saved $10M/year, cut security check turnaround from
+            days to minutes, and reduced manual data entry by 70%.</strong
+          >
+        </p>
+        <figure>
+          <img
+            alt="A refugee officer preparing documents for an interview."
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/officer-prep.webp"
+          />
+        </figure>
+        <figure>
+          <img
+            alt="Our persona for an adjudicating officer explaining their story, paint points, and goals."
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/Adjudicating Officer-min.webp"
+          />
+          <figcaption
+            style="text-align: center; padding: 0.5em; font-size: 0.85em"
+          >
+            Our persona for an adjudicating officer explaining their story, pain
+            points, and goals.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="learnings">
+        <figure>
+          <img
+            alt="Hotline Bling meme of Drake rejecting a single column form in favor of a multi-column form."
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/drake_nah.webp"
+          />
+        </figure>
+        <h2>Best Practices Not Always Best</h2>
+        <p>
+          One of our usability tests involved a web form using industry best
+          practices: single-column, many pages. This layout usually makes
+          filling out forms less overwhelming. Turns out this pattern doesn’t
+          work when officers need to review large amounts of information at a
+          glance. We opted for a familiar layout mirroring the paper forms that
+          applicants mail to USCIS.
+        </p>
+        <p style="font-family: monospace">
+         Hypothesis: Single-column forms reduce cognitive load.
+         <br />
+Finding: Officers need to compare information across fields.
+<br />
+Decision: Use card groups matching paper-form mental model.
+<br />
+Result: Faster review, fewer missed details, less stress.
+</p>    
+        <p>
+          Since officers needed to see all the information at once to make
+          decisions. We designed a deck of cards that grouped related
+          information together. This design made it easier for officers to find
+          the information they needed and make decisions faster.
+        </p>
+        <figure>
+          <img
+            alt="The updated case editing UI utilizes a card based interface to display applicant case data"
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/global-screens.webp"
+          />
+        </figure>
+        <figure>
+          <img
+            alt="The updated case editing UI utilizes a card based interface to display applicant case data"
+            class="project__image"
+            loading="lazy"
+            src="images/projects/uscis/global-workflow.webp"
+          />
+        </figure>
+      </section>
+      <section id="improvements">
+        <h2>Automating Away Drudgery</h2>
+        <p>
+          By talking to users, we learned that their biggest frustrations
+          involved data entry. You know how infuriating it is having to re-type
+          your resume when applying for a job? Well, people at USCIS had to type
+          in all the information from paper forms asylum applicants mailed in.
+          Then they had to retype this information when submitting applicants
+          for security checks.
+        </p>
 
-                <h2>Automating Away Drudgery</h2>
-                <p>By talking to users, we learned that their biggest frustrations involved data entry. You know how infuriating it is having to re-type your resume when applying for a job? Well, people at USCIS had to type in all the information from paper forms asylum applicants mailed in. Then they had to retype this information when submitting applicants for security checks.</p>
-    
-    <p>Our new system automated data entry where possible. We built APIs to automate security check submissions as well. The new system aggregated check results from over eight different law enforcement databases. It also sped up check responses from a matter of days to a matter of minutes.</p>
-    <figure role="img" aria-label="Security check processing time comparison: 5 days down to 15 minutes" style="font-size: 1rem; margin-bottom: 2rem;">
-    <p style="margin-bottom: 0; white-space: nowrap; font-family: monospace; font-size: clamp(10px, 3vw, 24px);">CHECK RESULTS: DAYS → MINUTES
-    <br>
-    [ ░░░░░░░░░░░░░░░░░░░░ ] Before: 5 Days
-    <br>
-    [ █ ] After: 15 Mins</p>
-    <figcaption style="text-align: center; padding: .5em; font-size: .85em; margin-top: 0;">Cost of Waiting: $40/hr x ~1k officers.</figcaption>
-    </figure>
-    <figure class="youtube">
-        <iframe width="600" height="353" src="https://www.youtube.com/embed/zfcSZaoCizs?si=8tXFHf4dnoJ1HX76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </figure>
-            </section>
-            <section id="results">
-                <h2>Results</h2>
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <span class="metric-value">$10M</span>
-                        <span class="metric-label">in maintenance fees saved</span>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-value">>80%</span>
-                        <span class="metric-label">faster security checks</span>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-value">70%</span>
-                        <span class="metric-label">less manual data entry</span>
-                    </div>
-                </div>
-            </section>
-            <section id="more">
-                <h3>Other Projects</h3>
-            <ul>
-                <li><a class="project-nav" href="tdds.html">
-                U.S. Treasury Department
-            </a></li>
-            <li>
-                <a class="project-nav" href="bridges-to-science.html">
-                Bridges to Science
+        <p>
+          Our new system automated data entry where possible. We built APIs to
+          automate security check submissions as well. The new system aggregated
+          check results from over eight different law enforcement databases. It
+          also sped up check responses from a matter of days to a matter of
+          minutes.
+        </p>
+        <figure
+          role="img"
+          aria-label="Security check processing time comparison: 5 days down to 15 minutes"
+          style="font-size: 1rem; margin-bottom: 2rem"
+        >
+          <p
+            style="
+              margin-bottom: 0;
+              white-space: nowrap;
+              font-family: monospace;
+              font-size: clamp(10px, 3vw, 24px);
+            "
+          >
+            CHECK RESULTS: DAYS → MINUTES
+            <br />
+            [ ░░░░░░░░░░░░░░░░░░░░ ] Before: 5 Days
+            <br />
+            [ █ ] After: 15 Mins
+          </p>
+          <figcaption
+            style="
+              text-align: center;
+              padding: 0.5em;
+              font-size: 0.85em;
+              margin-top: 0;
+            "
+          >
+            Cost of Waiting: $40/hr x ~1k officers.
+          </figcaption>
+        </figure>
+        <figure class="youtube">
+          <iframe
+            width="600"
+            height="353"
+            src="https://www.youtube.com/embed/zfcSZaoCizs?si=8tXFHf4dnoJ1HX76"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </section>
+      <section id="results">
+        <h2>Results</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-value">$10M</span>
+            <span class="metric-label">in maintenance fees saved</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">>80%</span>
+            <span class="metric-label">faster security checks</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">70%</span>
+            <span class="metric-label">less manual data entry</span>
+          </div>
+        </div>
+      </section>
+      <section id="more">
+        <h3>Other Projects</h3>
+        <ul>
+          <li>
+            <a class="project-nav" href="tdds.html">
+              U.S. Treasury Department
             </a>
-            </li>
-            </ul>
-            </section>
-        </main>
-        <footer>
-            <ul class="footer__nav" id="footer" aria-label="Social media links">
-                <li class="footer__link">
-                    <a href="https://www.linkedin.com/in/nickleake/" aria-label="Visit Nick's LinkedIn profile">
-                        <img alt="LinkedIn logo" class="social" src="images/socials/linkedin-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://dribbble.com/nick_leake" aria-label="Visit Nick's Dribbble profile">
-                        <img alt="Dribbble basketball logo" class="social" src="images/socials/dribbble-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://www.instagram.com/nleake/" aria-label="Visit Nick's Instagram profile">
-                        <img alt="Instagram logo" class="social" src="images/socials/instagram-logo.svg">
-                    </a>
-                </li>
-                <li class="footer__link">
-                    <a href="https://github.com/nleake" aria-label="Visit Nick's GitHub profile">
-                        <img alt="GitHub logo" class="social" src="images/socials/github-logo.svg">
-                    </a>
-                </li>
-            </ul>
-            <a href="index.html">
-                <img alt="logo for Leek Designs of a fist clutching a leek surrounded by stars" id="footer_logo" src="images/leek_logo_bw.svg">
+          </li>
+          <li>
+            <a class="project-nav" href="bridges-to-science.html">
+              Bridges to Science
             </a>
-        </footer>
-    </body>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer__nav" id="footer" aria-label="Social media links">
+        <li class="footer__link">
+          <a
+            href="https://www.linkedin.com/in/nickleake/"
+            aria-label="Visit Nick's LinkedIn profile"
+          >
+            <img
+              alt="LinkedIn logo"
+              class="social"
+              src="images/socials/linkedin-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://dribbble.com/nick_leake"
+            aria-label="Visit Nick's Dribbble profile"
+          >
+            <img
+              alt="Dribbble basketball logo"
+              class="social"
+              src="images/socials/dribbble-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://www.instagram.com/nleake/"
+            aria-label="Visit Nick's Instagram profile"
+          >
+            <img
+              alt="Instagram logo"
+              class="social"
+              src="images/socials/instagram-logo.svg"
+            />
+          </a>
+        </li>
+        <li class="footer__link">
+          <a
+            href="https://github.com/nleake"
+            aria-label="Visit Nick's GitHub profile"
+          >
+            <img
+              alt="GitHub logo"
+              class="social"
+              src="images/socials/github-logo.svg"
+            />
+          </a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <img
+          alt="logo for Leek Designs of a fist clutching a leek surrounded by stars"
+          id="footer_logo"
+          src="images/leek_logo_bw.svg"
+        />
+      </a>
+    </footer>
+  </body>
 </html>
