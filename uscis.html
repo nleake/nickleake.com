@@ -56,8 +56,8 @@
           Our goal was to cut operating costs and improve security by replacing
           the old system within a year.
           <strong
-            >Our work saved $10M/year, cut security check turnaround from
-            days to minutes, and reduced manual data entry by 70%.</strong
+            >Our work saved $10M/year, cut security check turnaround from days
+            to minutes, and reduced manual data entry by 70%.</strong
           >
         </p>
         <figure>
@@ -101,90 +101,106 @@
           glance. We opted for a familiar layout mirroring the paper forms that
           applicants mail to USCIS.
         </p>
-        <p style="font-family: monospace">
-         Hypothesis: Single-column forms reduce cognitive load.
-         <br />
-Finding: Officers need to compare information across fields.
-<br />
-Decision: Use card groups matching paper-form mental model.
-<br />
-Result: Faster review, fewer missed details, less stress.
-</p>    
         <p>
           Since officers needed to see all the information at once to make
           decisions. We designed a deck of cards that grouped related
           information together. This design made it easier for officers to find
           the information they needed and make decisions faster.
         </p>
+                <div class="code-block">
+          <p>
+            <span>Hypothesis:</span> Single-column forms reduce cognitive load.
+          </p>
+          <p>
+            <span>Finding:</span> Officers need to compare information across
+            fields.
+          </p>
+          <p>
+            <span>Decision:</span> Use card groups matching paper-form mental
+            model.
+          </p>
+          <p>
+            <span>Result:</span> Faster review, fewer missed details, less
+            stress.
+          </p>
+        </div>
         <figure>
           <img
             alt="The updated case editing UI utilizes a card based interface to display applicant case data"
             class="project__image"
+            
             loading="lazy"
             src="images/projects/uscis/global-screens.webp"
           />
         </figure>
-        <figure>
-          <img
-            alt="The updated case editing UI utilizes a card based interface to display applicant case data"
-            class="project__image"
-            loading="lazy"
-            src="images/projects/uscis/global-workflow.webp"
-          />
-        </figure>
       </section>
       <section id="improvements">
-        <h2>Automating Away Drudgery</h2>
-        <p>
-          By talking to users, we learned that their biggest frustrations
-          involved data entry. You know how infuriating it is having to re-type
-          your resume when applying for a job? Well, people at USCIS had to type
-          in all the information from paper forms asylum applicants mailed in.
-          Then they had to retype this information when submitting applicants
-          for security checks.
-        </p>
-
-        <p>
-          Our new system automated data entry where possible. We built APIs to
-          automate security check submissions as well. The new system aggregated
-          check results from over eight different law enforcement databases. It
-          also sped up check responses from a matter of days to a matter of
-          minutes.
-        </p>
-        <figure
-          role="img"
-          aria-label="Security check processing time comparison: 5 days down to 15 minutes"
-          style="font-size: 1rem; margin-bottom: 2rem"
-        >
-          <p
-            style="
-              margin-bottom: 0;
-              white-space: nowrap;
-              font-family: monospace;
-              font-size: clamp(10px, 3vw, 24px);
-            "
-          >
-            CHECK RESULTS: DAYS → MINUTES
-            <br />
-            [ ░░░░░░░░░░░░░░░░░░░░ ] Before: 5 Days
-            <br />
-            [ █ ] After: 15 Mins
-          </p>
-          <figcaption
-            style="
-              text-align: center;
-              padding: 0.5em;
-              font-size: 0.85em;
-              margin-top: 0;
-            "
-          >
-            Cost of Waiting: $40/hr x ~1k officers.
-          </figcaption>
-        </figure>
+        <div class="two-column-layout">
+          <figure>
+            <img
+              alt="The updated workflow automated security checks and organized case information into a deck of cards."
+              loading="lazy"
+              class="project__image"
+              id="journeymap"
+              src="images/projects/uscis/global-workflow.webp"
+            />
+          </figure>
+          <div class="text-content">
+            <h2>Automating Away Drudgery</h2>
+            <p>
+              By talking to users, we learned that their biggest frustrations
+              involved data entry. You know how infuriating it is having to
+              re-type your resume when applying for a job? Well, people at USCIS
+              had to type in all the information from paper forms asylum
+              applicants mailed in. Then they had to retype this information
+              when submitting applicants for security checks.
+            </p>
+            <p>
+              Our new system automated data entry where possible. We built APIs
+              to automate security check submissions as well. The new system
+              aggregated check results from over eight different law enforcement
+              databases. It also sped up check responses from a matter of days
+              to a matter of minutes.
+            </p>
+            <figure
+              role="img"
+              aria-label="Security check processing time comparison: 5 days down to 15 minutes"
+              style="font-size: 1rem; margin-bottom: 2rem"
+            >
+              <p
+                style="
+                  margin-bottom: 0;
+                  white-space: nowrap;
+                  font-family: monospace;
+                  font-size: clamp(14px, 3vw, 18px);
+                "
+              >
+                CHECK RESULTS: DAYS → MINUTES
+                <br />
+                [ ░░░░░░░░░░░░░░░░░░░░ ] Before: 5 Days
+                <br />
+                [ █ ] After: 15 Mins
+              </p>
+              <figcaption
+                style="
+                  padding: 0.5em;
+                  font-size: 0.85em;
+                  margin: 0 1rem;
+                "
+              >
+                Cost of Waiting: $40/hr x ~1k officers.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        </section>
+        <section id="team">
+        <h3>Learn About Our Team</h3>
         <figure class="youtube">
           <iframe
             width="600"
             height="353"
+            style="border-radius: 16px"
             src="https://www.youtube.com/embed/zfcSZaoCizs?si=8tXFHf4dnoJ1HX76"
             title="YouTube video player"
             frameborder="0"

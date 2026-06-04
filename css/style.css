@@ -1,10 +1,10 @@
 /* Dark Color Palette */
 :root {
   --primary: #343334;
-  --secondary: #C9F299;
+  --secondary: #c9f299;
   --offwhite: #1a171e;
-  --ink: #F5F0F6;
-  --gradient: linear-gradient(147deg, #1A171E 0%, #0f3b40 74%);
+  --ink: #f5f0f6;
+  --gradient: linear-gradient(147deg, #1a171e 0%, #0f3b40 74%);
   --theme-name: "dark";
   --border-color: rgba(51, 51, 51, 0.5);
   --card-bg: rgba(52, 51, 52, 0.33);
@@ -35,27 +35,25 @@
 }
 
 @font-face {
-  font-family: 'Anton';
+  font-family: "Anton";
   font-display: swap;
   font-style: normal;
-  src: local('Anton'), url(../fonts/Anton-Regular.ttf);
+  src: local("Anton"), url(../fonts/Anton-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-display: swap;
   font-style: bold;
-  src: local('Poppins-Bold'), url(../fonts/Poppins-Bold.ttf);
+  src: local("Poppins-Bold"), url(../fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-display: swap;
   font-style: normal;
-  src: local('Poppins-Regular'), url(../fonts/Poppins-Regular.ttf);
+  src: local("Poppins-Regular"), url(../fonts/Poppins-Regular.ttf);
 }
-
-
 
 /* Universal Styles */
 *,
@@ -87,7 +85,7 @@ a {
   transition: 0.3s;
 }
 a:hover {
-    filter: opacity(0.8);
+  filter: opacity(0.8);
 }
 img,
 picture,
@@ -100,8 +98,8 @@ svg {
 h1,
 h2,
 h3 {
-  font-family: "Anton", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    "Anton", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 400;
   line-height: 1.1;
   overflow-wrap: break-word;
@@ -123,7 +121,7 @@ h3 {
 section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   align-items: center;
   place-content: center;
 }
@@ -214,19 +212,23 @@ section {
   text-decoration: none;
   padding: 1rem 2.5rem;
   border-radius: 50px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   &:hover {
     background-color: var(--secondary);
     color: var(--primary);
     transform: translateY(-3px); /* Subtle lift */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
   &:active {
-  transform: translateY(0); /* Presses back down when clicked */
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
-  background-color: var(--offwhite);
-  color: var(--ink);
+    transform: translateY(0); /* Presses back down when clicked */
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    background-color: var(--offwhite);
+    color: var(--ink);
   }
 }
 
@@ -235,7 +237,7 @@ section {
   .cta-container {
     margin: 3rem 0;
   }
-  
+
   .cta-button {
     font-size: 1rem;
     padding: 0.875rem 2rem;
@@ -245,6 +247,7 @@ section {
 /* Project Cards */
 #work {
   padding: 1.5rem 1rem;
+  margin-bottom: 4rem;
 }
 .card-set {
   /* display: flex;
@@ -272,6 +275,124 @@ article.card img {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+/* Process Section Styling - PNG Mockup Alignment */
+#process {
+  padding: 4rem 1rem;
+  background: var(--gradient);
+  background-size: 600% 600%;
+  margin-bottom: 4rem;
+}
+
+.process-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.section-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+}
+
+.display-header {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.display-header span {
+  color: var(--secondary);
+}
+
+.process-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 400px;
+  /* Keep container centered but items inside can stagger */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+.process-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -1.5rem; /* Tighten up spacing to title as in Figma */
+}
+
+.process-item__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Precise staggering for mobile based on Figma absolute positions */
+.process-item.explore {
+  align-self: flex-start;
+  & img {
+    margin-bottom: -.75rem;
+  }
+}
+
+.process-item.design {
+  align-self: flex-end;
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+
+.process-item.ship {
+  align-self: flex-start;
+  margin-top: -1rem;
+}
+
+@media (min-width: 769px) {
+  .display-header {
+    font-size: 7rem;
+  }
+  
+  .process-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    gap: 0;
+  }
+  
+  .process-item {
+    width: 280px;
+  }
+  
+  .process-item.explore,
+  .process-item.design,
+  .process-item.ship {
+    align-self: auto;
+    margin: 0;
+  }
+  
+  .process-item.design {
+    margin-top: 5rem;
+  }
+}
+
 article.card:hover,
 article.card:focus {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
@@ -281,7 +402,6 @@ article.card:focus {
   & > .card__header {
     color: var(--secondary);
   }
-
 }
 article.card:active {
   box-shadow: none;
@@ -293,6 +413,45 @@ article.card:active {
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
+}
+
+/* USCIS Improvements Layout */
+.two-column-layout {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.two-column-layout .text-content {
+  flex: 1;
+  h2 {
+    text-align: left;
+    padding: 0 1rem;
+  }
+}
+
+.two-column-layout figure {
+  flex: 1;
+  margin: 0;
+}
+
+.two-column-layout .project__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .two-column-layout h2 {
+    margin-top: 0.5rem;
+  }
 }
 
 /* Reveal Animations */
@@ -321,18 +480,17 @@ article.card:active {
 /* --- Testimonials Section Styles --- */
 .testimonials-section {
   padding: 2rem 0;
-  
-  .author-name {
-  font-weight: 600;
-  font-size: 1.125rem;
-  margin: 0 0 0.25rem 0;
 
+  .author-name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 0.25rem 0;
   }
   .author-title {
-  font-size: 0.875rem;
-  opacity: 80%;
-  margin: 0;
-  line-height: 1.4;
+    font-size: 0.875rem;
+    opacity: 80%;
+    margin: 0;
+    line-height: 1.4;
   }
 }
 
@@ -343,22 +501,27 @@ article.card:active {
   gap: 2rem;
   align-items: start;
   padding: 1rem;
-;
 }
 
 .testimonial-card {
   background: var(--card-bg);
   padding: 2.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -430,7 +593,7 @@ footer {
   left: 1.5rem;
   margin-top: 1rem;
   opacity: 50%;
-  filter: contrast(.7);
+  filter: contrast(0.7);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -510,6 +673,9 @@ figure {
 .project__image {
   width: clamp(300px, 100vw, 1000px);
   border-radius: 1rem;
+  #journeymap > img {
+    max-width: 600px;
+  }
 }
 .project-nav {
   font-weight: 700;
@@ -566,7 +732,7 @@ figure {
 .demo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: start;
 }
 
@@ -576,7 +742,6 @@ figure {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -685,6 +850,10 @@ figure {
   }
 }
 
+#results {
+  margin-top: 2rem;
+}
+
 /* Metrics Cards */
 .metrics-grid {
   display: grid;
@@ -692,7 +861,7 @@ figure {
   gap: 2rem;
   width: 100%;
   max-width: 1100px;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   padding: 0 1rem;
 }
 
@@ -719,7 +888,7 @@ figure {
   font-size: clamp(3rem, 6vw, 4rem);
   color: var(--secondary);
   line-height: 1;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
   display: block;
 }
@@ -738,7 +907,7 @@ figure {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .metric-card {
     padding: 1.5rem 2rem;
   }
@@ -748,6 +917,27 @@ figure {
   padding-top: 4rem;
 }
 
+.code-block {
+  font-family: monospace;
+  font-size: 0.95rem;
+  background: black;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  & p > span {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* Element | http://127.0.0.1:5501/uscis.html */
+
+#journeymap {
+  max-width: 500px;
+}
 
 /* Media Queries */
 @media (max-width: 900px) {
