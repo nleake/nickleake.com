@@ -169,7 +169,7 @@ section {
   flex: 1;
 }
 .cta-text {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 300;
 }
 .cta-text > h3:nth-child(1) {
@@ -390,6 +390,10 @@ article.card img {
   
   .process-item.design {
     margin-top: 5rem;
+  }
+
+  .cta-text {
+    font-size: 3rem;
   }
 }
 
