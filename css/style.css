@@ -201,6 +201,7 @@ section {
 .cta-text > p > a {
   text-decoration: underline;
   color: var(--secondary);
+  font-weight: 600;
 }
 
 .cta-button {
@@ -304,7 +305,7 @@ article.card img {
 
 .display-header {
   font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--ink);
@@ -330,12 +331,25 @@ article.card img {
   align-items: center;
   text-align: center;
   width: 250px;
+  & h3 {
+    font-family: "Anton", sans-serif;
+    color: var(--secondary);
+    padding-top: 0.75rem;
+  }
 }
+
+/* Element | http://127.0.0.1:5501/ */
+
+div.process-item:nth-child(1) > h3:nth-child(2) {
+  padding-top: 0;
+}
+
 
 .process-item img {
   width: 100%;
   height: auto;
   margin-bottom: -1.5rem; /* Tighten up spacing to title as in Figma */
+  filter:hue-rotate(340deg) saturate(1.2);
 }
 
 .process-item__title {
@@ -376,6 +390,11 @@ article.card img {
     max-width: 1000px;
     gap: 0;
   }
+
+  .process-description p{
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
   
   .process-item {
     width: 280px;
@@ -395,6 +414,18 @@ article.card img {
   .cta-text {
     font-size: 3rem;
   }
+
+  #about {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background: var(--gradient);
+    background-size: 200% 400%;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
 }
 
 article.card:hover,
@@ -919,6 +950,7 @@ figure {
 
 #more {
   padding-top: 4rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .code-block {
