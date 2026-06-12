@@ -334,14 +334,16 @@ article.card img {
   & h3 {
     font-family: "Anton", sans-serif;
     color: var(--secondary);
-    padding-top: 0.75rem;
+    padding-top: 2rem;
   }
 }
 
-/* Element | http://127.0.0.1:5501/ */
+div.process-item:nth-child(2) > h3:nth-child(2) {
+  color: var(--ink);
+}
 
 div.process-item:nth-child(1) > h3:nth-child(2) {
-  padding-top: 0;
+  padding-top: 1.25rem;
 }
 
 
@@ -349,7 +351,7 @@ div.process-item:nth-child(1) > h3:nth-child(2) {
   width: 100%;
   height: auto;
   margin-bottom: -1.5rem; /* Tighten up spacing to title as in Figma */
-  filter:hue-rotate(340deg) saturate(1.2);
+  filter:hue-rotate(345deg) saturate(0.9);
 }
 
 .process-item__title {
