@@ -131,10 +131,6 @@ h3 {
   font-weight: 300;
 }
 
-header {
-  padding: var(--space-lg) var(--space-md);
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -399,6 +395,10 @@ div.process-item:nth-child(1) > h3:nth-child(2) {
 @media (min-width: 769px) {
   .display-header {
     font-size: 7rem;
+  }
+
+  header {
+    padding: var(--space-xl) var(--space-lg);
   }
 
   .process-container {
