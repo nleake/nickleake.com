@@ -85,6 +85,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  filter: sepia(.05);
 }
 p {
   max-width: var(--max-width-content);
@@ -605,6 +606,15 @@ article.card:active {
   border-top: 1px solid var(--primary);
   padding-top: 1rem;
 }
+
+#cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-xl);
+}
+
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
