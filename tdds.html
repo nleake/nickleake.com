@@ -23,12 +23,13 @@
             </div>
         </nav>
         <main class="container" id="main-content">
-            <h1>
-                U.S. Treasury Department
-            </h1>
-            <figure>
-                <img alt="a screenshot of a Treasury webpage outlining policy issues and the Inflation Reduction Act." src="images/projects/treasury/treasury-site.webp" class="project__image">
-            </figure>
+            <header>
+                <h1 class="project__title">U.S. Treasury Department</h1>
+                <p class="project__subtitle">design systems, figma, agentic ai</p>
+                <figure>
+                    <img alt="a screenshot of a Treasury webpage outlining policy issues and the Inflation Reduction Act." src="images/projects/treasury/treasury-site.webp" class="project__image">
+                </figure>
+            </header>
             <section id="intro">
             <h2>Remixing Standards</h2>
                 <p>
@@ -37,6 +38,7 @@
                  </p>
                 <p>After some research, we remixed the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a> to help our teams ship higher quality software faster. Our version has official branding, a library of accessible components, and a detailed user guide. I built the components in Figma, wrote documentation, and conducted accessibility audits on our existing apps. Over a dozen projects use the design system, but you can see it in action on  <a href="https://home.treasury.gov">treasury.gov</a> or <a href="https://bep.gov">bep.gov</a>. 
                 </p>
+            </section>
             <figure>
                 <img alt="Cover and Headings pages of the Treasury Design System." src="images/projects/treasury/TDDS-Components1.webp" class="project__image">
             </figure>
@@ -50,9 +52,8 @@
             <figure>
                 <img alt="a screenshot of the Treasury design system documentation outlining how to use form controls alongside the bep.gov home page." src="images/projects/treasury/form-controls.webp" class="project__image">
             </figure>
-        </section>
                 <section id="demo-area" class="demo-section">
-                    <h2>Recyclable Components</h2>
+                    <h2>Reusable Components</h2>
             <div class="component-switcher">
                 <label for="component-select">Select component:</label>
                 <select id="component-select">
@@ -151,8 +152,6 @@
                 </article>
             </div>
         </section>
-        <section id="builtStuff">
-
             <figure>
                 <img alt="a screenshot of data visualizations within the Treasury design system." src="images/projects/treasury/datavisualizations.webp" class="project__image">
             </figure>
@@ -163,7 +162,6 @@
                 <img alt="a mockup of potential enhancements to treasury.gov including data widgets and task-based navigation." src="images/projects/treasury/lookingAhead.webp" class="project__image">
             </figure>
             &nbsp;
-        </section>
         <section id="componentPlayground">
         <script>
             document.addEventListener('DOMContentLoaded', () => {
@@ -315,20 +313,20 @@
             </section>
             <section id="more">
                 <h3>Other Projects</h3>
-                <ul>
-                    <li><a class="project-nav" href="uscis.html">
-                    Global Asylum
-                </a></li>
-                <li>
-                    <a class="project-nav" href="bridges-to-science.html">
-                    Bridges to Science
-                </a>
-                </li>
-                </ul>
+                <div class="more-projects-grid">
+                    <a href="uscis.html" class="more-project-card">
+                        <img src="images/projects/uscis/uscis_award-small.webp" alt="Global Asylum">
+                        <h4>Global Asylum</h4>
+                    </a>
+                    <a href="bridges-to-science.html" class="more-project-card">
+                        <img src="images/projects/b2s/b2sMockup-small.webp" alt="Bridges to Science">
+                        <h4>Bridges to Science</h4>
+                    </a>
+                </div>
             </section>
             <section id="cta">
     <div class="cta-container">
-        <h2 class="section-title">Curious about design systems?</h2>
+        <h2 class="cta-title">Curious about design systems?</h2>
         <p>I can help you build one.</p>
       <a href="mailto:heynickleake@gmail.com?subject=hey%20whats%20up" class="cta-button">Let's work together</a>
     </div>

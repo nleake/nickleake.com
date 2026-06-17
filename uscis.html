@@ -24,9 +24,11 @@
       </div>
     </nav>
     <main class="container" id="main-content">
-      <h1>Global Asylum</h1>
-
-      <section id="intro">
+      <header>
+        <h1 class="project__title">Global Asylum</h1>
+        <p class="project__subtitle">
+          user research, product strategy
+        </p>
         <figure>
           <img
             alt="The mainframe immigration system we replaced, RAPS. A black screen with a mess of different colored text and inputs scattered about."
@@ -35,6 +37,8 @@
             src="images/projects/uscis/RAPS.webp"
           />
         </figure>
+      </header>
+      <section id="intro">
         <h2>Mainframe Modernization</h2>
         <p>
           It's 2018 and I'm working at United States Citizenship and Immigration
@@ -52,14 +56,12 @@
           applicants.
         </p>
         <p>
-          I was responsible for design, testing, and managing our team's work.
+          I was responsible for design, testing, and managing my team's work.
           Our goal was to cut operating costs and improve security by replacing
-          the old system within a year.
-          <strong
-            >Our work saved $10M/year, cut security check turnaround from days
-            to minutes, and reduced manual data entry by 70%.</strong
-          >
+          the old system within a year. Our work saved $10M/year, cut security check turnaround from days
+            to minutes, and reduced manual data entry by 70%.
         </p>
+      </section>
         <figure>
           <img
             alt="A refugee officer preparing documents for an interview."
@@ -75,15 +77,11 @@
             loading="lazy"
             src="images/projects/uscis/Adjudicating Officer-min.webp"
           />
-          <figcaption
-            style="text-align: center; padding: 0.5em; font-size: 0.85em"
-          >
+          <figcaption>
             Our persona for an adjudicating officer explaining their story, pain
             points, and goals.
           </figcaption>
         </figure>
-      </section>
-      <section id="learnings">
         <figure>
           <img
             alt="Hotline Bling meme of Drake rejecting a single column form in favor of a multi-column form."
@@ -92,6 +90,7 @@
             src="images/projects/uscis/drake_nah.webp"
           />
         </figure>
+        <section id="learnings">
         <h2>Best Practices Not Always Best</h2>
         <p>
           One of our usability tests involved a web form using industry best
@@ -124,6 +123,7 @@
             stress.
           </p>
         </div>
+        </section>
         <figure>
           <img
             alt="The updated case editing UI utilizes a card based interface to display applicant case data"
@@ -133,8 +133,6 @@
             src="images/projects/uscis/global-screens.webp"
           />
         </figure>
-      </section>
-      <section id="improvements">
         <div class="two-column-layout">
           <figure>
             <img
@@ -180,21 +178,13 @@
                 <br />
                 [ █ ] After: 15 Mins
               </p>
-              <figcaption
-                style="
-                  padding: 0.5em;
-                  font-size: 0.85em;
-                  margin: 0 1rem;
-                "
-              >
+              <figcaption>
                 Cost of Waiting: $40/hr x ~1k officers.
               </figcaption>
             </figure>
           </div>
         </div>
-        </section>
         <section id="team">
-        <h3>Learn About Our Team</h3>
         <figure class="youtube">
           <iframe
             width="600"
@@ -236,22 +226,20 @@
       </section>
       <section id="more">
         <h3>Other Projects</h3>
-        <ul>
-          <li>
-            <a class="project-nav" href="tdds.html">
-              U.S. Treasury Department
-            </a>
-          </li>
-          <li>
-            <a class="project-nav" href="bridges-to-science.html">
-              Bridges to Science
-            </a>
-          </li>
-        </ul>
+        <div class="more-projects-grid">
+          <a href="tdds.html" class="more-project-card">
+            <img src="images/treasury-building-small.webp" alt="U.S. Treasury Department">
+            <h4>U.S. Treasury Department</h4>
+          </a>
+          <a href="bridges-to-science.html" class="more-project-card">
+            <img src="images/projects/b2s/b2sMockup-small.webp" alt="Bridges to Science">
+            <h4>Bridges to Science</h4>
+          </a>
+        </div>
       </section>
       <section id="cta">
     <div class="cta-container">
-        <h2 class="section-title">Updating old systems?</h2>
+        <h2 class="cta-title">Updating old systems?</h2>
         <p>I can help you modernize them.</p>
       <a href="mailto:heynickleake@gmail.com?subject=hey%20whats%20up" class="cta-button">Let's work together</a>
     </div>
