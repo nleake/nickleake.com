@@ -933,6 +933,55 @@ figcaption {
   display: none !important;
 }
 
+
+  #more {
+    padding-top: var(--space-xxl);
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more-projects-grid {
+    display: flex;
+    gap: 2rem;
+    max-width: var(--max-width-image);
+    padding: var(--space-md);
+  }
+
+  .more-project-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-8px);
+      & h4 {
+        color: var(--secondary);
+      }
+      & img {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .more-project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    background: var(--card-bg);
+    transition: all 0.3s ease;
+    filter: brightness(0.9) grayscale() contrast(1.1);
+  }
+
+  .more-project-card h4 {
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+
 @media (max-width: 900px) {
   .demo-grid {
     grid-template-columns: 1fr;
@@ -1000,54 +1049,6 @@ figcaption {
 
   .metric-card {
     padding: 1.5rem 2rem;
-  }
-
-  #more {
-    padding-top: var(--space-xxl);
-    border-bottom: 1px solid var(--border-color);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .more-projects-grid {
-    display: flex;
-    gap: 2rem;
-    max-width: var(--max-width-image);
-    padding: var(--space-md);
-  }
-
-  .more-project-card {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    &:hover {
-      transform: translateY(-8px);
-      & h4 {
-        color: var(--secondary);
-      }
-      & img {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      }
-    }
-  }
-
-  .more-project-card img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 12px;
-    background: var(--card-bg);
-    transition: all 0.3s ease;
-    filter: brightness(0.9) grayscale() contrast(1.1);
-  }
-
-  .more-project-card h4 {
-    margin: 0;
-    transition: color 0.3s ease;
   }
 
   .code-block {
