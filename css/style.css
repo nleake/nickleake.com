@@ -982,6 +982,23 @@ figcaption {
     transition: color 0.3s ease;
   }
 
+
+  .code-block {
+    font-family: monospace;
+    font-size: 0.95rem;
+    background: black;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    & p > span {
+      color: var(--secondary);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+  }
+
 @media (max-width: 900px) {
   .demo-grid {
     grid-template-columns: 1fr;
@@ -1051,21 +1068,6 @@ figcaption {
     padding: 1.5rem 2rem;
   }
 
-  .code-block {
-    font-family: monospace;
-    font-size: 0.95rem;
-    background: black;
-    padding: 1em;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    & p > span {
-      color: var(--secondary);
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.25rem;
-    }
-  }
 
   /* Element | http://127.0.0.1:5501/uscis.html */
 
