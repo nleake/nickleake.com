@@ -403,11 +403,6 @@ div.process-item:nth-child(1) > h3:nth-child(2) {
   .display-header {
     font-size: 7rem;
   }
-
-  .container h1, .container h2 {
-    text-align: center;
-    align-self: inherit;
-  }
   
   .process-container {
     flex-direction: row;
@@ -705,11 +700,10 @@ li > a:hover {
   font-size: clamp(24px, 13vw, 72px);
   text-transform: uppercase;
   margin-bottom: var(--space-sm);
-  align-self: flex-start;
 }
 .container h2 {
   text-align: center;
-  font-size: clamp(32px, 8vw, 48px);
+  font-size: clamp(20px, 8vw, 48px);
   padding-top: var(--space-md);
 }
 
@@ -1014,12 +1008,9 @@ figcaption {
 }
 
 .more-projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  display: flex;
   gap: 2rem;
   max-width: var(--max-width-image);
-  margin: var(--space-lg) 0 var(--space-xxl);
-  width: 100%;
   padding: var(--space-md);
 }
 
@@ -1047,12 +1038,10 @@ figcaption {
   border-radius: 12px;
   background: var(--card-bg);
   transition: all 0.3s ease;
+  filter: brightness(0.9) grayscale() contrast(1.1);
 }
 
 .more-project-card h4 {
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
   margin: 0;
   transition: color 0.3s ease;
 }
