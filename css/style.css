@@ -96,6 +96,7 @@ a {
   color: var(--ink);
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: underline;
 }
 a:hover {
   filter: opacity(0.8);
@@ -281,6 +282,9 @@ article.card {
   background-color: var(--card-bg);
   background-blend-mode: multiply;
   box-shadow: 0px 6px 19px -6px rgba(0, 0, 0, 0.25);
+  & a {
+    text-decoration: none;
+  }
 }
 article.card img {
   height: 300px;
@@ -451,7 +455,7 @@ article.card:focus {
   top: 3px;
   opacity: 100%;
   border: 2px solid var(--secondary);
-  & > .card__header {
+  & .card__header {
     color: var(--secondary);
   }
 }
