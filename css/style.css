@@ -100,7 +100,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  filter: opacity(0.8);
+  filter: brightness(1.1);
 }
 img,
 picture,
