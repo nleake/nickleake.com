@@ -574,22 +574,17 @@ article.card:active {
   height: 100%;
   display: flex;
   flex-direction: column;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow:
-      0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
 }
 
 .quote-icon {
   font-size: 4rem;
-  color: var(--primary);
+  color: var(--secondary);
   line-height: 1;
   font-family: Georgia, serif;
   position: absolute;
   top: 1rem;
   left: 1.5rem;
+  opacity: 0.33;
 }
 
 .testimonial-text {
@@ -871,13 +866,12 @@ figcaption {
   line-height: 1.6;
 }
 
-.demo-docs li strong {
+strong {
   color: var(--secondary);
   display: block;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
 }
 
 /* Component Switcher */
@@ -1047,10 +1041,6 @@ figcaption {
   align-items: center;
   transition: all 0.3s ease;
   height: 100%;
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-  }
 }
 
 .metric-value {
@@ -1117,3 +1107,64 @@ figcaption {
     }
   }
 }
+
+/* SOI Comparison Section */
+.comparison-section {
+  padding: var(--space-xl) 1rem;
+  max-width: var(--max-width-image);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.comparison-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.media-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.comparison-media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.comparison-desc {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+  opacity: 0.85;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .comparison-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
